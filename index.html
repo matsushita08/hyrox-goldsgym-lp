@@ -9,6 +9,23 @@
 </head>
 <body>
 
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#" class="header-logo">
+        <img src="assets/images/logo.png" alt="GOLD'S GYM">
+        <span>× HYROX</span>
+      </a>
+      <nav class="header-nav">
+        <a href="#about" onclick="smoothTo('about');return false;">HYROXとは</a>
+        <a href="#stores" onclick="smoothTo('stores');return false;">店舗</a>
+        <a href="#pricing" onclick="smoothTo('pricing');return false;">料金</a>
+        <a href="#faq" onclick="smoothTo('faq');return false;">FAQ</a>
+      </nav>
+      <a href="#stores" class="header-cta" onclick="smoothTo('stores');return false;">体験予約</a>
+    </div>
+  </header>
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-overlay"></div>
@@ -22,7 +39,7 @@
   </section>
 
   <!-- WHAT IS HYROX -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <p class="section-label">WHAT IS HYROX</p>
       <h2 class="section-title">ハイロックスとは</h2>
@@ -286,7 +303,7 @@
   </section>
 
   <!-- FAQ -->
-  <section class="faq">
+  <section class="faq" id="faq">
     <div class="container">
       <p class="section-label">FAQ</p>
       <h2 class="section-title">よくある質問</h2>

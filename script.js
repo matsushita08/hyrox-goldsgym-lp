@@ -1,3 +1,13 @@
+// header scroll effect
+window.addEventListener('scroll', () => {
+  document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+function smoothTo(id) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+
 document.querySelectorAll('.event-img').forEach(img => {
   img.addEventListener('click', () => {
     document.getElementById('lightbox-img').src = img.src;
