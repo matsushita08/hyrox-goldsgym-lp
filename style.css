@@ -413,6 +413,25 @@ img { max-width: 100%; display: block; }
 .footer-stores { color: #555; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.05em; }
 .footer-copy { color: #333; font-size: 0.75rem; }
 
+/* ===== LIGHTBOX ===== */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+#lightbox.open { display: flex; }
+#lightbox-img {
+  max-width: 92vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+.event-img { cursor: zoom-in; }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .events-grid { grid-template-columns: repeat(2, 1fr); }
