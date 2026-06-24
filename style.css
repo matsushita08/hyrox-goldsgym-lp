@@ -135,7 +135,7 @@ img { max-width: 100%; display: block; }
 .about .section-desc { margin: 0 auto 48px; }
 .events-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 2px;
 }
 @media (min-width: 769px) {
