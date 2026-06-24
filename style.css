@@ -135,8 +135,11 @@ img { max-width: 100%; display: block; }
 .about .section-desc { margin: 0 auto 48px; }
 .events-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2px;
+}
+@media (min-width: 769px) {
+  .events-grid { grid-template-columns: repeat(4, 1fr); }
 }
 .event-card {
   background: var(--black);
