@@ -103,6 +103,13 @@ img { max-width: 100%; display: block; }
   text-align: center;
   padding: 40px 24px;
 }
+.hero-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto 16px;
+  display: block;
+}
 .hero-eyebrow {
   font-family: 'Oswald', sans-serif;
   font-size: 0.85rem;
@@ -403,6 +410,13 @@ img { max-width: 100%; display: block; }
 
 /* ===== FOOTER ===== */
 .footer { background: #0a0a0a; padding: 48px 0; text-align: center; }
+.footer-logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin: 0 auto 6px;
+  display: block;
+}
 .footer-logo {
   font-family: 'Oswald', sans-serif;
   font-size: 1.3rem;
