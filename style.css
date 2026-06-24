@@ -171,20 +171,32 @@ img { max-width: 100%; display: block; }
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
-.why-card {
-  background: var(--white);
-  padding: 36px 32px;
-  border-left: 4px solid var(--gold);
+.why-card { background: var(--white); overflow: hidden; }
+.why-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(30%);
+  transition: filter 0.3s, transform 0.3s;
+  overflow: hidden;
 }
-.why-icon { font-size: 2rem; margin-bottom: 12px; }
+.why-card:hover .why-img { filter: grayscale(0%); transform: scale(1.03); }
+.why-text { padding: 24px 28px; border-left: 4px solid var(--gold); }
+.why-num {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
 .why-card h3 {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: var(--black);
 }
-.why-card p { color: var(--midgray); line-height: 1.7; font-size: 0.95rem; }
+.why-card p { color: var(--midgray); line-height: 1.7; font-size: 0.9rem; }
 
 /* ===== STORES ===== */
 .stores { padding: 100px 0; background: var(--black); }
