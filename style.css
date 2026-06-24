@@ -139,7 +139,7 @@ img { max-width: 100%; display: block; }
   gap: 2px;
 }
 @media (min-width: 769px) {
-  .events-grid { grid-template-columns: repeat(4, 1fr); }
+  .events-grid { grid-template-columns: repeat(2, 1fr); }
 }
 .event-card {
   background: var(--black);
