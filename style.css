@@ -144,12 +144,12 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 .event-img {
-  height: 180px;
-  background-size: cover;
-  background-position: center top;
-  transition: transform 0.4s;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
 }
-.event-card:hover .event-img { transform: scale(1.05); }
+.event-card:hover .event-img { transform: scale(1.02); }
 .event-label {
   display: flex;
   align-items: center;
