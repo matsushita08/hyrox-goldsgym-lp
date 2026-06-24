@@ -252,11 +252,9 @@ img { max-width: 100%; display: block; }
 }
 .store-btn:hover { border-color: var(--gold); color: var(--white); }
 .store-btn--gold {
-  border-color: var(--gold);
-  color: var(--gold);
-  font-weight: 600;
+  border-color: #444;
+  color: #aaa;
 }
-.store-btn--gold:hover { background: var(--gold); color: var(--black); }
 
 /* ===== PRICING ===== */
 .pricing { padding: 100px 0; background: var(--white); text-align: center; }
