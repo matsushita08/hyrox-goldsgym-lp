@@ -233,14 +233,30 @@ img { max-width: 100%; display: block; }
   display: block;
 }
 .store-addr { color: #888; font-size: 0.85rem; margin-bottom: 16px; line-height: 1.5; }
-.store-link {
-  color: var(--gold);
-  font-family: 'Oswald', sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-  transition: opacity 0.2s;
+.store-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
 }
-.store-link:hover { opacity: 0.7; }
+.store-btn {
+  display: block;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  padding: 10px 16px;
+  border: 1px solid #444;
+  color: #aaa;
+  transition: border-color 0.2s, color 0.2s;
+}
+.store-btn:hover { border-color: var(--gold); color: var(--white); }
+.store-btn--gold {
+  border-color: var(--gold);
+  color: var(--gold);
+  font-weight: 600;
+}
+.store-btn--gold:hover { background: var(--gold); color: var(--black); }
 
 /* ===== PRICING ===== */
 .pricing { padding: 100px 0; background: var(--white); text-align: center; }
