@@ -8,20 +8,6 @@ function smoothTo(id) {
   if (el) el.scrollIntoView({ behavior: 'smooth' });
 }
 
-document.querySelectorAll('.event-img').forEach(img => {
-  img.addEventListener('click', () => {
-    document.getElementById('lightbox-img').src = img.src;
-    document.getElementById('lightbox').classList.add('open');
-  });
-});
-
-function closeLightbox() {
-  document.getElementById('lightbox').classList.remove('open');
-}
-
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeLightbox();
-});
 
 function showStore(storeId) {
   document.querySelectorAll('.pricing-table').forEach(t => t.classList.remove('active'));
