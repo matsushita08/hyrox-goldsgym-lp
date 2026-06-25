@@ -627,26 +627,27 @@ img { max-width: 100%; display: block; }
   text-transform: none;
 }
 .store-addr {
-  color: #888;
+  color: #fff;
   font-size: 0.85rem;
   margin-bottom: 16px;
   line-height: 1.5;
   min-height: 52px;
 }
-.store-map {
-  display: flex;
+.store-map-link {
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: #aaa;
   text-decoration: none;
-  color: #888;
+  margin-bottom: 8px;
   transition: color 0.2s;
 }
-.store-map:hover { color: var(--gold); }
-.store-map svg {
-  width: 14px;
-  height: 14px;
+.store-map-link:hover { color: var(--white); }
+.gmap-icon {
+  width: 16px;
+  height: 16px;
   flex-shrink: 0;
-  stroke: currentColor;
 }
 .store-soon-text {
   color: rgba(255,255,255,0.62);
