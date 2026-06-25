@@ -13,9 +13,7 @@
   <header class="site-header" id="site-header">
     <div class="header-inner">
       <a href="#" class="header-logo">
-        <img src="assets/images/logo.png" alt="GOLD'S GYM">
-        <span class="brand-cross">×</span>
-        <span class="hyrox-wordmark hyrox-wordmark--header" aria-label="HYROX 仮ロゴ">HYROX</span>
+        <img src="assets/images/golds-gym-wordmark.png" alt="GOLD'S GYM" class="header-logo-img">
       </a>
       <nav class="header-nav">
         <a href="#about" onclick="smoothTo('about');return false;">HYROXとは</a>
@@ -23,23 +21,34 @@
         <a href="#pricing" onclick="smoothTo('pricing');return false;">料金</a>
         <a href="#faq" onclick="smoothTo('faq');return false;">FAQ</a>
       </nav>
-      <a href="#stores" class="header-cta" onclick="smoothTo('stores');return false;">体験予約</a>
+      <a href="#stores" class="header-cta" onclick="smoothTo('stores');return false;">HYROX体験を予約する</a>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-slider" aria-hidden="true">
+      <img src="assets/HYROX画像/HYROXスタート.webp" alt="">
+      <img src="assets/HYROX画像/スレッドプッシュ.jpeg" alt="">
+      <img src="assets/HYROX画像/スレッドプル.jpeg" alt="">
+      <img src="assets/HYROX画像/バーピー.jpg" alt="">
+      <img src="assets/HYROX画像/ローイング.jpeg" alt="">
+      <img src="assets/HYROX画像/ファーマーズキャリー.jpeg" alt="">
+      <img src="assets/HYROX画像/サンドバッグランジ.jpeg" alt="">
+      <img src="assets/HYROX画像/ウォールボール.jpeg" alt="">
+    </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <div class="hero-brand-lockup" aria-label="GOLD'S GYM × HYROX">
+      <div class="hero-brand-lockup" aria-label="GOLD'S GYM">
         <img src="assets/images/logo.png" alt="GOLD'S GYM" class="hero-logo">
-        <span class="hero-brand-cross">×</span>
-        <span class="hyrox-wordmark hyrox-wordmark--hero" aria-label="HYROX 仮ロゴ">HYROX</span>
       </div>
-      <p class="hero-eyebrow">GOLD'S GYM × HYROX</p>
-      <h1 class="hero-title">限界の先へ。<br>8種目で自分を塗り替えろ。</h1>
-      <p class="hero-sub">千葉・東京エリア3店舗でHYROXトレーニング開始</p>
-      <a href="#stores" class="btn-primary" onclick="document.getElementById('stores').scrollIntoView({behavior:'smooth'});return false;">店舗を確認する</a>
+      <h1 class="hero-title hero-title--desktop">走る。鍛える。超えていく。<br>HYROXトレーニングを<br>ゴールドジムで。</h1>
+      <h1 class="hero-title hero-title--mobile">走る。鍛える。<br>超えていく。<br>HYROXを<br>ゴールドジムで。</h1>
+      <p class="hero-sub">初心者から大会出場を目指す方まで、<br>公式器具と本格設備で実践的にトレーニングできます。</p>
+      <div class="hero-buttons">
+        <a href="#stores" class="btn-primary" onclick="smoothTo('stores');return false;">HYROX体験を予約する</a>
+        <a href="#stores" class="btn-secondary" onclick="smoothTo('stores');return false;">対応店舗を見る</a>
+      </div>
     </div>
   </section>
 
@@ -47,48 +56,79 @@
   <section class="about" id="about">
     <div class="container">
       <p class="section-label">WHAT IS HYROX</p>
-      <h2 class="section-title">ハイロックスとは</h2>
-      <p class="section-desc">HYROXは世界80カ国・55万人以上が参加するフィットネス競技。1kmのランと8種目のワークアウトを交互に行う、誰でも出場できるレースフォーマットです。</p>
-      <div class="events-grid">
-        <div class="event-card">
-          <img class="event-img" src="assets/images/skierg.png" alt="SkiErg">
-          <div class="event-label"><span class="event-num">01</span><span class="event-name">SkiErg</span></div>
-          <div class="event-detail"><p>ヒップヒンジを使い大きな動作で。一定のリズムを保ちながら休まず継続。</p></div>
+      <h2 class="section-title">HYROXとは</h2>
+      <div class="about-copy">
+        <p>HYROXは、ランニングとファンクショナルワークアウトを組み合わせたレースです。</p>
+        <p>1kmを走ったあとにワークアウト。<br>これを8回くり返す、シンプルでチャレンジングな構成になっています。</p>
+        <p>大会は広々とした屋内会場で開催され、スタートからフィニッシュまで観客の応援に包まれます。<br>世界中どこでも同じフォーマットで開催されるため、グローバルランキングや世界選手権にもつながります。</p>
+      </div>
+      <div class="beginner-panel">
+        <div class="beginner-copy">
+          <p class="section-label">BEGINNER WELCOME</p>
+          <h3>初めてでも大丈夫</h3>
+          <p>HYROXトレーニングは、いきなり本番と同じ強度で行う必要はありません。体力・運動経験・目的に合わせて、距離・回数・負荷を調整しながら体験できます。</p>
         </div>
-        <div class="event-card">
-          <img class="event-img" src="assets/images/sled-push.png" alt="Sled Push">
-          <div class="event-label"><span class="event-num">02</span><span class="event-name">Sled Push</span></div>
-          <div class="event-detail"><p>体幹を固め全身で押す。足首の可動域と下半身強化が重要。</p></div>
+        <div class="beginner-list">
+          <h4>こんな方におすすめ</h4>
+          <ul>
+            <li>HYROXに興味がある</li>
+            <li>大会に出てみたい</li>
+            <li>筋トレだけでなく心肺機能も高めたい</li>
+            <li>新しい目標がほしい</li>
+            <li>一人だと追い込めない</li>
+          </ul>
         </div>
-        <div class="event-card">
-          <img class="event-img" src="assets/images/sled-pull.png" alt="Sled Pull">
-          <div class="event-label"><span class="event-num">03</span><span class="event-name">Sled Pull</span></div>
-          <div class="event-detail"><p>腕でなく全身で引く。後方へ移動しながら引き、ロープを整えて足場確保。</p></div>
+      </div>
+      <div class="race-map">
+        <div class="race-map-header">
+          <span class="race-badge race-badge--start">START</span>
+          <p>1km RUN とワークアウトを交互に繰り返す、HYROXのレースフロー。</p>
         </div>
-        <div class="event-card">
-          <img class="event-img" src="assets/images/burpee.png" alt="Burpee Broad Jump">
-          <div class="event-label"><span class="event-num">04</span><span class="event-name">Burpee Broad Jump</span></div>
-          <div class="event-detail"><p>一定ペースを維持し後半失速を防ぐ。着地は常に両足平行に。</p></div>
+        <div class="race-row race-row--right">
+          <div class="race-item">
+            <img src="assets/HYROX画像/スキーエルゴ.webp" alt="SkiErg" onclick="openLightbox(this.src, this.alt)">
+            <div class="race-label"><span>01</span>SkiErg 1000m</div>
+          </div>
+          <div class="race-run">1km RUN</div>
+          <div class="race-item">
+            <img src="assets/HYROX画像/スレッドプッシュ.jpeg" alt="Sled Push" onclick="openLightbox(this.src, this.alt)">
+            <div class="race-label"><span>02</span>Sled Push 50m</div>
+          </div>
+          <div class="race-run">1km RUN</div>
+          <div class="race-item">
+            <img src="assets/HYROX画像/スレッドプル.jpeg" alt="Sled Pull" onclick="openLightbox(this.src, this.alt)">
+            <div class="race-label"><span>03</span>Sled Pull 50m</div>
+          </div>
         </div>
-        <div class="event-card">
-          <img class="event-img" src="assets/images/rowing.png" alt="Rowing">
-          <div class="event-label"><span class="event-num">05</span><span class="event-name">Rowing</span></div>
-          <div class="event-detail"><p>リカバリーを意識し一定リズムで。ダンパーは少し軽いと感じる設定がベスト。</p></div>
+        <div class="race-turn race-turn--down">1km RUN</div>
+        <div class="race-row race-row--left">
+          <div class="race-item">
+            <img src="assets/HYROX画像/バーピー.jpg" alt="Burpee Broad Jump" onclick="openLightbox(this.src, this.alt)">
+            <div class="race-label"><span>04</span>Burpee Broad Jump 80m</div>
+          </div>
+          <div class="race-run">1km RUN</div>
+          <div class="race-item">
+            <img src="assets/HYROX画像/ローイング.jpeg" alt="Rowing" onclick="openLightbox(this.src, this.alt)">
+            <div class="race-label"><span>05</span>Rowing 1000m</div>
+          </div>
+          <div class="race-run">1km RUN</div>
+          <div class="race-item">
+            <img src="assets/HYROX画像/ファーマーズキャリー.jpeg" alt="Farmers Carry" onclick="openLightbox(this.src, this.alt)">
+            <div class="race-label"><span>06</span>Farmers Carry 200m</div>
+          </div>
         </div>
-        <div class="event-card">
-          <img class="event-img" src="assets/images/farmers-carry.png" alt="Farmers Carry">
-          <div class="event-label"><span class="event-num">06</span><span class="event-name">Farmers Carry</span></div>
-          <div class="event-detail"><p>握力の持久力が勝敗のカギ。体幹を安定させケトルベルを振らない。</p></div>
-        </div>
-        <div class="event-card">
-          <img class="event-img" src="assets/images/sandbag.png" alt="Sandbag Lunges">
-          <div class="event-label"><span class="event-num">07</span><span class="event-name">Sandbag Lunges</span></div>
-          <div class="event-detail"><p>殿筋で重さを受けるイメージで。後ろ膝を必ず床につけ、直立姿勢に戻る。</p></div>
-        </div>
-        <div class="event-card">
-          <img class="event-img" src="assets/images/wall-balls.png" alt="Wall Balls">
-          <div class="event-label"><span class="event-num">08</span><span class="event-name">Wall Balls</span></div>
-          <div class="event-detail"><p>全身の連動で正確に動作。20回×5セットなど分割して定期的に休憩を。</p></div>
+        <div class="race-turn race-turn--down race-turn--left">1km RUN</div>
+        <div class="race-row race-row--right race-row--final">
+          <div class="race-item">
+            <img src="assets/HYROX画像/サンドバッグランジ.jpeg" alt="Sandbag Lunges" onclick="openLightbox(this.src, this.alt)">
+            <div class="race-label"><span>07</span>Sandbag Lunges 100m</div>
+          </div>
+          <div class="race-run">1km RUN</div>
+          <div class="race-item">
+            <img src="assets/HYROX画像/ウォールボール.jpeg" alt="Wall Balls" onclick="openLightbox(this.src, this.alt)">
+            <div class="race-label"><span>08</span>Wall Balls 100回</div>
+          </div>
+          <span class="race-badge race-badge--goal">GOAL</span>
         </div>
       </div>
     </div>
@@ -104,32 +144,32 @@
           <div class="why-img" style="background-image:url('https://hyroxjapan.com/wp-content/uploads/2022/06/Pro-Athlete-pushing-the-HYROX-sled-1024x682.jpg')"></div>
           <div class="why-text">
             <p class="why-num">01</p>
-            <h3>本格設備完備</h3>
-            <p>HYROX公式器具を3店舗に設置。本番さながらの環境でトレーニング可能。</p>
+            <h3>本番を想定できるHYROX設備</h3>
+            <p>SkiErg・Sled Push・Rowingなど、レースに近い動きを実践できます。</p>
           </div>
         </div>
         <div class="why-card">
           <div class="why-img" style="background-image:url('https://hyroxjapan.com/wp-content/uploads/2022/06/female-HYROX-athlete-pulling-the-Sled.jpg')"></div>
           <div class="why-text">
             <p class="why-num">02</p>
-            <h3>千葉・東京3店舗ネットワーク</h3>
-            <p>千葉ニュータウン・東陽町・浦安の3店舗でトレーニングできる。</p>
+            <h3>筋力と持久力を同時に高める環境</h3>
+            <p>ウエイト・有酸素・ファンクショナルを組み合わせ、HYROXに必要な土台を作れます。</p>
           </div>
         </div>
         <div class="why-card">
           <div class="why-img" style="background-image:url('https://hyroxjapan.com/wp-content/uploads/2022/06/Doubles-Athletes-finishing-the-HYROX-race.jpg')"></div>
           <div class="why-text">
             <p class="why-num">03</p>
-            <h3>経験豊富なスタッフ</h3>
-            <p>トレーニング経験豊富なトレーナーがサポート。初心者から競技志向まで対応。</p>
+            <h3>正しいフォームを学べるサポート</h3>
+            <p>初めての方でも、動作のポイントや負荷設定をスタッフがサポートします。</p>
           </div>
         </div>
         <div class="why-card">
           <div class="why-img" style="background-image:url('https://hyroxjapan.com/wp-content/uploads/2022/06/Relay-Team-finishing-the-HYROX-race-1024x682.jpg')"></div>
           <div class="why-text">
             <p class="why-num">04</p>
-            <h3>コミュニティ</h3>
-            <p>同じ目標を持つ仲間と切磋琢磨できる環境。</p>
+            <h3>続けたくなる本気の空気感</h3>
+            <p>一人では追い込めないトレーニングも、ゴールドジムの環境だから継続できます。</p>
           </div>
         </div>
       </div>
@@ -139,55 +179,103 @@
   <!-- STORES -->
   <section class="stores" id="stores">
     <div class="container">
-      <p class="section-label">3 LOCATIONS</p>
+      <p class="section-label">LOCATIONS</p>
       <h2 class="section-title">対応店舗</h2>
+      <p class="stores-note">HYROX設備は常に利用できるとは限りません。利用可能時間や体験内容は、事前に各店舗へお問い合わせください。</p>
       <div class="stores-grid">
 
         <div class="store-card">
-          <div class="store-img-placeholder">
-            <span>店舗写真</span>
-          </div>
+          <img class="store-img" src="assets/店舗写真/HYROX東陽町.png" alt="ゴールドジム東陽町 HYROXトレーニングエリア">
           <div class="store-info">
             <h3>GOLD'S GYM<br><span>東陽町</span></h3>
-            <p class="store-addr">東京都江東区東陽 ／ 東陽町駅</p>
+            <a class="store-addr store-map" href="https://maps.google.com/?q=GOLD'S+GYM+東陽町+東京都江東区" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              東京メトロ東西線 東陽町駅
+            </a>
             <div class="store-links">
               <a href="https://www.goldsgym.jp/shop/71221/" target="_blank" class="store-btn">ホームページ</a>
               <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry?CLUB_CD=000060" target="_blank" class="store-btn">入会予約</a>
-              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=1&CLUB_CD=000060" target="_blank" class="store-btn store-btn--gold">ビジター体験予約</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=1&CLUB_CD=000060" target="_blank" class="store-btn store-btn--gold">HYROX体験を予約する</a>
             </div>
           </div>
         </div>
 
         <div class="store-card">
-          <div class="store-img-placeholder">
-            <span>店舗写真</span>
-          </div>
+          <img class="store-img" src="assets/店舗写真/浦安千葉HYROX.png" alt="ゴールドジム浦安千葉 HYROXトレーニングエリア">
           <div class="store-info">
             <h3>GOLD'S GYM<br><span>浦安</span></h3>
-            <p class="store-addr">千葉県浦安市 ／ 浦安駅</p>
+            <a class="store-addr store-map" href="https://maps.google.com/?q=GOLD'S+GYM+浦安+千葉県浦安市" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              東京メトロ東西線 浦安駅 徒歩1分
+            </a>
             <div class="store-links">
               <a href="https://www.goldsgym.jp/shop/12160/" target="_blank" class="store-btn">ホームページ</a>
               <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry?CLUB_CD=000037" target="_blank" class="store-btn">入会予約</a>
-              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=1&CLUB_CD=000037" target="_blank" class="store-btn store-btn--gold">ビジター体験予約</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=1&CLUB_CD=000037" target="_blank" class="store-btn store-btn--gold">HYROX体験を予約する</a>
             </div>
           </div>
         </div>
 
         <div class="store-card">
-          <div class="store-img-placeholder">
-            <span>店舗写真</span>
-          </div>
+          <img class="store-img" src="assets/店舗写真/HYROX千葉ニュータウン.png" alt="ゴールドジム千葉ニュータウン HYROXトレーニングエリア">
           <div class="store-info">
             <h3>GOLD'S GYM<br><span>千葉ニュータウン</span></h3>
-            <p class="store-addr">千葉県印西市 ／ 千葉ニュータウン中央駅</p>
+            <a class="store-addr store-map" href="https://maps.google.com/?q=GOLD'S+GYM+千葉ニュータウン+千葉県印西市" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              北総線 千葉ニュータウン中央駅 徒歩1分
+            </a>
             <div class="store-links">
               <a href="https://www.goldsgym.jp/shop/18095/" target="_blank" class="store-btn">ホームページ</a>
-              <a href="https://www.goldsgym.jp/join" target="_blank" class="store-btn">入会予約</a>
-              <a href="https://www.goldsgym.jp/shop/18095/membership" target="_blank" class="store-btn store-btn--gold">ビジター体験予約</a>
+              <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry?CLUB_CD=000065" target="_blank" class="store-btn">入会予約</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=1&CLUB_CD=000065" target="_blank" class="store-btn store-btn--gold">HYROX体験を予約する</a>
             </div>
           </div>
         </div>
 
+        <div class="store-card store-card--soon">
+          <div class="store-coming">
+            <span>COMING SOON</span>
+          </div>
+          <div class="store-info">
+            <h3>GOLD'S GYM<br><span>幕張<br>ベイパークアリーナ</span></h3>
+            <a class="store-addr store-map" href="https://maps.google.com/?q=GOLD'S+GYM+幕張ベイパークアリーナ" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              JR京葉線 海浜幕張駅 北口 徒歩13分
+            </a>
+            <div class="store-links">
+              <a href="https://www.goldsgym.jp/shop/12131" target="_blank" class="store-btn">ホームページ</a>
+              <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry/?CLUB_CD=000071" target="_blank" class="store-btn">入会予約</a>
+            </div>
+            <p class="store-soon-text">HYROXトレーニング対応予定。詳細は決まり次第ご案内します。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIAL FLOW -->
+  <section class="trial-flow" id="trial-flow">
+    <div class="container">
+      <p class="section-label">TRIAL FLOW</p>
+      <h2 class="section-title">体験でできること</h2>
+      <p class="flow-lead">内容は目的や体力に合わせて調整できます。すべてを行う必要はなく、ご希望に応じて確認できる内容です。</p>
+      <div class="flow-grid">
+        <div class="flow-card">
+          <p class="flow-num">OPTION 01</p>
+          <h3>目的や不安の確認</h3>
+          <p>大会を目指したい、まず試したい、体力に不安があるなど、必要に応じて目的や運動経験を確認できます。</p>
+        </div>
+        <div class="flow-card">
+          <p class="flow-num">OPTION 02</p>
+          <h3>基本動作の確認</h3>
+          <p>SkiErg、Sled Push、Rowingなどを、無理のない範囲で体験しながら正しいフォームを確認できます。</p>
+        </div>
+        <div class="flow-card">
+          <p class="flow-num">OPTION 03</p>
+          <h3>続け方の相談</h3>
+          <p>希望される方には、大会出場・体力づくり・ダイエットなど、目的に合わせた続け方をご案内できます。</p>
+        </div>
       </div>
     </div>
   </section>
@@ -196,7 +284,8 @@
   <section class="pricing" id="pricing">
     <div class="container">
       <p class="section-label">MEMBERSHIP</p>
-      <h2 class="section-title">料金プラン</h2>
+      <h2 class="section-title">体験・利用料金</h2>
+      <p class="pricing-lead">まずはビジター体験から利用できます。<br>入会前に、HYROX設備やトレーニング内容を実際に確認できます。</p>
       <p class="pricing-note">※ 入会金別途。各店舗の最新料金は公式サイトをご確認ください。</p>
 
       <div class="pricing-tabs">
@@ -309,6 +398,33 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="toggleFaq(this)">
+            体力に自信がなくても大丈夫ですか？
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>はい、大丈夫です。体力や運動経験に合わせて、距離・回数・負荷を調整しながら行えます。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            大会に出る予定がなくても体験できますか？
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>はい、可能です。大会出場を目指す方だけでなく、新しいトレーニングに挑戦したい方や、体力づくりをしたい方にもおすすめです。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            体験では何をしますか？
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>HYROXで使用される動作や器具を体験しながら、基本的な流れやトレーニング方法を確認できます。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
             3店舗すべてで練習できますか？
             <span class="faq-icon">＋</span>
           </button>
@@ -332,10 +448,10 @@
   <!-- CTA -->
   <section class="cta" id="contact">
     <div class="container">
-      <h2 class="cta-title">まずは体験から</h2>
-      <p class="cta-desc">強引な勧誘は一切ありません。<br>1回の体験でHYROXの魅力を感じてください。</p>
+      <h2 class="cta-title">まずは一度、HYROXを体感してください。</h2>
+      <p class="cta-desc">走る、押す、引く、運ぶ、投げる。<br>普段のトレーニングとは違う達成感があります。<br><br>強引な勧誘は一切ありません。<br>初心者の方もお気軽にご参加ください。</p>
       <div class="cta-buttons">
-        <a href="#stores" class="btn-primary" onclick="smoothTo('stores');return false;">予約はコチラから</a>
+        <a href="#stores" class="btn-primary" onclick="smoothTo('stores');return false;">HYROX体験を予約する</a>
       </div>
     </div>
   </section>
@@ -346,7 +462,7 @@
       <div class="footer-brand-lockup" aria-label="GOLD'S GYM × HYROX">
         <img src="assets/images/logo.png" alt="GOLD'S GYM" class="footer-logo-img">
         <span class="footer-brand-cross">×</span>
-        <span class="hyrox-wordmark hyrox-wordmark--footer" aria-label="HYROX 仮ロゴ">HYROX</span>
+        <img src="assets/images/hyrox-logo.png" alt="HYROX" class="hyrox-logo-img hyrox-logo-img--footer">
       </div>
       <p class="footer-stores">千葉ニュータウン ／ 東陽町 ／ 浦安</p>
       <p class="footer-copy">© 2026 Gold's Gym Japan. All rights reserved.</p>
@@ -355,7 +471,7 @@
 
   <!-- LIGHTBOX -->
   <div id="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img" src="" alt="">
+    <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
   </div>
 
   <script src="script.js"></script>
