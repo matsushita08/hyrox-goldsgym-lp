@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HYROX × GOLD'S GYM | 千葉・東京エリア</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>GOLD'S GYM HYROX | 対応店舗公式ページ</title>
+  <meta name="description" content="GOLD'S GYMのHYROX対応店舗、種目ルール、設備比較、体験予約をまとめた公式ページです。">
+  <link rel="stylesheet" href="leaflet-fallback.css?v=20260910-1">
+  <link rel="stylesheet" href="style.css?v=20260910-1">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -13,40 +15,42 @@
   <header class="site-header" id="site-header">
     <div class="header-inner">
       <a href="#" class="header-logo">
-        <img src="assets/images/golds-gym-wordmark.png" alt="GOLD'S GYM" class="header-logo-img">
+        <img src="assets/images/golds-gym-official-wordmark.png" alt="GOLD'S GYM" class="header-logo-img">
       </a>
       <nav class="header-nav">
         <a href="#about" onclick="smoothTo('about');return false;">HYROXとは</a>
+        <a href="#race-flow" onclick="smoothTo('race-flow');return false;">種目</a>
         <a href="#stores" onclick="smoothTo('stores');return false;">店舗</a>
+        <a href="#equipment" onclick="smoothTo('equipment');return false;">設備比較</a>
         <a href="#pricing" onclick="smoothTo('pricing');return false;">料金</a>
         <a href="#faq" onclick="smoothTo('faq');return false;">FAQ</a>
       </nav>
-      <a href="#stores" class="header-cta" onclick="smoothTo('stores');return false;">HYROX体験を予約する</a>
+      <a href="#stores" class="header-cta" onclick="smoothTo('stores');return false;">HYROXトレーニングを予約する</a>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-slider" aria-hidden="true">
-      <img src="assets/HYROX画像/HYROXスタート.webp" alt="">
-      <img src="assets/HYROX画像/スレッドプッシュ.jpeg" alt="">
-      <img src="assets/HYROX画像/スレッドプル.jpeg" alt="">
-      <img src="assets/HYROX画像/バーピー.jpg" alt="">
-      <img src="assets/HYROX画像/ローイング.jpeg" alt="">
-      <img src="assets/HYROX画像/ファーマーズキャリー.jpeg" alt="">
-      <img src="assets/HYROX画像/サンドバッグランジ.jpeg" alt="">
-      <img src="assets/HYROX画像/ウォールボール.jpeg" alt="">
+      <img src="assets/hyrox-events/hyrox-start.webp" alt="">
+      <img src="assets/hyrox-events/sled-push.jpeg" alt="">
+      <img src="assets/hyrox-events/sled-pull.jpeg" alt="">
+      <img src="assets/hyrox-events/burpee-broad-jump.jpg" alt="">
+      <img src="assets/hyrox-events/rowing.jpeg" alt="">
+      <img src="assets/hyrox-events/farmers-carry.jpeg" alt="">
+      <img src="assets/hyrox-events/sandbag-lunges.jpeg" alt="">
+      <img src="assets/hyrox-events/wall-balls.jpeg" alt="">
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <div class="hero-brand-lockup" aria-label="GOLD'S GYM">
-        <img src="assets/images/logo.png" alt="GOLD'S GYM" class="hero-logo">
+      <h1 class="hero-title hero-title--desktop"><span class="hero-title-hyrox">HYROX</span><span class="hero-title-training">トレーニングを</span><br><span class="hero-title-jp">始めるなら</span></h1>
+      <h1 class="hero-title hero-title--mobile"><span class="hero-title-hyrox">HYROX</span><br><span class="hero-title-training">トレーニングを</span><br><span class="hero-title-jp">始めるなら</span></h1>
+      <div class="hero-brand-lockup">
+        <img src="assets/images/golds-gym-official-wordmark.png" alt="GOLD'S GYM" class="hero-logo">
       </div>
-      <h1 class="hero-title hero-title--desktop">走る。鍛える。超えていく。<br>HYROXトレーニングを<br>ゴールドジムで。</h1>
-      <h1 class="hero-title hero-title--mobile">走る。鍛える。<br>超えていく。<br>HYROXを<br>ゴールドジムで。</h1>
-      <p class="hero-sub">初心者から大会出場を目指す方まで、<br>公式器具と本格設備で実践的にトレーニングできます。</p>
+      <p class="hero-sub">初心者から大会出場を目指す方まで、<br>本格設備で目的に合わせてトレーニングできます。</p>
       <div class="hero-buttons">
-        <a href="#stores" class="btn-primary" onclick="smoothTo('stores');return false;">HYROX体験を予約する</a>
+        <a href="#stores" class="btn-primary" onclick="smoothTo('stores');return false;">HYROXトレーニングを予約する</a>
         <a href="#stores" class="btn-secondary" onclick="smoothTo('stores');return false;">対応店舗を見る</a>
       </div>
     </div>
@@ -56,80 +60,233 @@
   <section class="about" id="about">
     <div class="container">
       <p class="section-label">WHAT IS HYROX</p>
-      <h2 class="section-title">HYROXとは</h2>
+      <h2 class="section-title">HYROXとは？</h2>
       <div class="about-copy">
         <p>HYROXは、ランニングとファンクショナルワークアウトを組み合わせたレースです。</p>
         <p>1kmを走ったあとにワークアウト。<br>これを8回くり返す、シンプルでチャレンジングな構成になっています。</p>
         <p>大会は広々とした屋内会場で開催され、スタートからフィニッシュまで観客の応援に包まれます。<br>世界中どこでも同じフォーマットで開催されるため、グローバルランキングや世界選手権にもつながります。</p>
       </div>
-      <div class="beginner-panel">
-        <div class="beginner-copy">
-          <p class="section-label">BEGINNER WELCOME</p>
-          <h3>初めてでも大丈夫</h3>
-          <p>HYROXトレーニングは、いきなり本番と同じ強度で行う必要はありません。体力・運動経験・目的に合わせて、距離・回数・負荷を調整しながら体験できます。</p>
-        </div>
-        <div class="beginner-list">
-          <h4>こんな方におすすめ</h4>
-          <ul>
-            <li>HYROXに興味がある</li>
-            <li>大会に出てみたい</li>
-            <li>筋トレだけでなく心肺機能も高めたい</li>
-            <li>新しい目標がほしい</li>
-            <li>一人だと追い込めない</li>
-          </ul>
+      <div class="about-subsection about-subsection--movie">
+        <div class="about-video-block">
+          <div class="about-video-copy">
+            <p class="section-label">MOVIE</p>
+            <h3>まずは、HYROXの<br>空気感を動画で。</h3>
+            <p>ランとワークアウトを交互に行うレースの雰囲気を、短い動画で確認できます。</p>
+          </div>
+          <div class="video-frame">
+            <video src="assets/video/what-is-hyrox-web.mp4" controls playsinline preload="metadata"></video>
+          </div>
         </div>
       </div>
-      <div class="race-map">
-        <div class="race-map-header">
-          <span class="race-badge race-badge--start">START</span>
-          <p>1km RUN とワークアウトを交互に繰り返す、HYROXのレースフロー。</p>
+    </div>
+  </section>
+
+  <!-- RACE FLOW -->
+  <section class="race-section" id="race-flow">
+    <div class="container">
+      <div class="race-section-inner">
+        <div class="about-block-heading">
+          <p class="section-label">RACE FLOW</p>
+          <h3>HYROXの流れ</h3>
         </div>
-        <div class="race-row race-row--right">
-          <div class="race-item">
-            <img src="assets/HYROX画像/スキーエルゴ.webp" alt="SkiErg" onclick="openLightbox(this.src, this.alt)">
-            <div class="race-label"><span>01</span>SkiErg 1000m</div>
+        <details class="race-map" open>
+          <summary class="race-map-summary">HYROXの流れを見る</summary>
+          <p class="race-flow-lead">1km RUNと8種目を交互に行い、GOALを目指します。</p>
+          <div class="race-flow-track">
+            <div class="race-route-row">
+              <div class="race-flow-node race-flow-node--terminal">START</div>
+              <div class="race-run-step">1km RUN</div>
+              <article class="race-flow-card">
+                <img src="assets/hyrox-events/skierg.webp" alt="SkiErg" onclick="openLightbox(this.src, this.alt)">
+                <div class="race-flow-body">
+                  <p class="race-flow-number">01</p>
+                  <h4>SkiErg</h4>
+                  <p>1,000m</p>
+                  <button type="button" onclick="openRuleModal('skierg')">詳細を見る</button>
+                </div>
+              </article>
+              <div class="race-run-step">1km RUN</div>
+              <article class="race-flow-card">
+                <img src="assets/hyrox-events/sled-push.jpeg" alt="Sled Push" onclick="openLightbox(this.src, this.alt)">
+                <div class="race-flow-body">
+                  <p class="race-flow-number">02</p>
+                  <h4>Sled Push</h4>
+                  <p>50m</p>
+                  <button type="button" onclick="openRuleModal('sled-push')">詳細を見る</button>
+                </div>
+              </article>
+            </div>
+
+            <div class="race-route-turn race-route-turn--right"><span class="race-route-label">1km RUN</span></div>
+
+            <div class="race-route-row race-route-row--reverse">
+              <article class="race-flow-card">
+                <img src="assets/hyrox-events/sled-pull.jpeg" alt="Sled Pull" onclick="openLightbox(this.src, this.alt)">
+                <div class="race-flow-body">
+                  <p class="race-flow-number">03</p>
+                  <h4>Sled Pull</h4>
+                  <p>50m</p>
+                  <button type="button" onclick="openRuleModal('sled-pull')">詳細を見る</button>
+                </div>
+              </article>
+              <div class="race-run-step">1km RUN</div>
+              <article class="race-flow-card">
+                <img src="assets/hyrox-events/burpee-broad-jump.jpg" alt="Burpee Broad Jump" onclick="openLightbox(this.src, this.alt)">
+                <div class="race-flow-body">
+                  <p class="race-flow-number">04</p>
+                  <h4>Burpee Broad Jump</h4>
+                  <p>80m</p>
+                  <button type="button" onclick="openRuleModal('burpee')">詳細を見る</button>
+                </div>
+              </article>
+              <div class="race-run-step">1km RUN</div>
+              <article class="race-flow-card">
+                <img src="assets/hyrox-events/rowing.jpeg" alt="Rowing" onclick="openLightbox(this.src, this.alt)">
+                <div class="race-flow-body">
+                  <p class="race-flow-number">05</p>
+                  <h4>Rowing</h4>
+                  <p>1,000m</p>
+                  <button type="button" onclick="openRuleModal('rowing')">詳細を見る</button>
+                </div>
+              </article>
+            </div>
+
+            <div class="race-route-turn race-route-turn--left"><span class="race-route-label">1km RUN</span></div>
+
+            <div class="race-route-row race-route-row--final">
+              <article class="race-flow-card">
+                <img src="assets/hyrox-events/farmers-carry.jpeg" alt="Farmers Carry" onclick="openLightbox(this.src, this.alt)">
+                <div class="race-flow-body">
+                  <p class="race-flow-number">06</p>
+                  <h4>Farmers Carry</h4>
+                  <p>200m</p>
+                  <button type="button" onclick="openRuleModal('farmers-carry')">詳細を見る</button>
+                </div>
+              </article>
+              <div class="race-run-step">1km RUN</div>
+              <article class="race-flow-card">
+                <img src="assets/hyrox-events/sandbag-lunges.jpeg" alt="Sandbag Lunges" onclick="openLightbox(this.src, this.alt)">
+                <div class="race-flow-body">
+                  <p class="race-flow-number">07</p>
+                  <h4>Sandbag Lunges</h4>
+                  <p>100m</p>
+                  <button type="button" onclick="openRuleModal('sandbag-lunges')">詳細を見る</button>
+                </div>
+              </article>
+              <div class="race-run-step">1km RUN</div>
+              <article class="race-flow-card">
+                <img src="assets/hyrox-events/wall-balls.jpeg" alt="Wall Balls" onclick="openLightbox(this.src, this.alt)">
+                <div class="race-flow-body">
+                  <p class="race-flow-number">08</p>
+                  <h4>Wall Balls</h4>
+                  <p>100回</p>
+                  <button type="button" onclick="openRuleModal('wall-balls')">詳細を見る</button>
+                </div>
+              </article>
+              <div class="race-flow-node race-flow-node--terminal">GOAL</div>
+            </div>
           </div>
-          <div class="race-run">1km RUN</div>
-          <div class="race-item">
-            <img src="assets/HYROX画像/スレッドプッシュ.jpeg" alt="Sled Push" onclick="openLightbox(this.src, this.alt)">
-            <div class="race-label"><span>02</span>Sled Push 50m</div>
+        </details>
+        <details class="race-overview-panel">
+          <summary>種目・距離・重量一覧</summary>
+          <div class="race-overview">
+            <div class="race-overview-head">
+              <p class="section-label">EVENT LIST</p>
+              <h3>種目・距離・重量一覧</h3>
+              <p>HYROXは「1km RUN」と下記8種目を交互に行うレースです。重量はカテゴリーにより変わります。</p>
+            </div>
+            <div class="race-overview-table-wrap">
+              <table class="race-overview-table">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>種目</th>
+                    <th>距離・回数</th>
+                    <th>Women</th>
+                    <th>Men</th>
+                    <th>PRO</th>
+                    <th>詳細</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>SkiErg</td>
+                    <td>1,000m</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td><button type="button" onclick="openRuleModal('skierg')">詳細を見る</button></td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>Sled Push</td>
+                    <td>50m</td>
+                    <td>102kg</td>
+                    <td>152kg</td>
+                    <td>152kg / 202kg</td>
+                    <td><button type="button" onclick="openRuleModal('sled-push')">詳細を見る</button></td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>Sled Pull</td>
+                    <td>50m</td>
+                    <td>78kg</td>
+                    <td>103kg</td>
+                    <td>103kg / 153kg</td>
+                    <td><button type="button" onclick="openRuleModal('sled-pull')">詳細を見る</button></td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>Burpee Broad Jump</td>
+                    <td>80m</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td><button type="button" onclick="openRuleModal('burpee')">詳細を見る</button></td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>Rowing</td>
+                    <td>1,000m</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td><button type="button" onclick="openRuleModal('rowing')">詳細を見る</button></td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>Farmers Carry</td>
+                    <td>200m</td>
+                    <td>16kg×2</td>
+                    <td>24kg×2</td>
+                    <td>24kg×2 / 32kg×2</td>
+                    <td><button type="button" onclick="openRuleModal('farmers-carry')">詳細を見る</button></td>
+                  </tr>
+                  <tr>
+                    <td>07</td>
+                    <td>Sandbag Lunges</td>
+                    <td>100m</td>
+                    <td>10kg</td>
+                    <td>20kg</td>
+                    <td>20kg / 30kg</td>
+                    <td><button type="button" onclick="openRuleModal('sandbag-lunges')">詳細を見る</button></td>
+                  </tr>
+                  <tr>
+                    <td>08</td>
+                    <td>Wall Balls</td>
+                    <td>100回</td>
+                    <td>4kg</td>
+                    <td>6kg</td>
+                    <td>6kg / 9kg</td>
+                    <td><button type="button" onclick="openRuleModal('wall-balls')">詳細を見る</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="race-overview-note">PRO欄は Women PRO / Men PRO の順です。実施重量やルールは大会・カテゴリーにより異なる場合があります。</p>
           </div>
-          <div class="race-run">1km RUN</div>
-          <div class="race-item">
-            <img src="assets/HYROX画像/スレッドプル.jpeg" alt="Sled Pull" onclick="openLightbox(this.src, this.alt)">
-            <div class="race-label"><span>03</span>Sled Pull 50m</div>
-          </div>
-        </div>
-        <div class="race-turn race-turn--down">1km RUN</div>
-        <div class="race-row race-row--left">
-          <div class="race-item">
-            <img src="assets/HYROX画像/バーピー.jpg" alt="Burpee Broad Jump" onclick="openLightbox(this.src, this.alt)">
-            <div class="race-label"><span>04</span>Burpee Broad Jump 80m</div>
-          </div>
-          <div class="race-run">1km RUN</div>
-          <div class="race-item">
-            <img src="assets/HYROX画像/ローイング.jpeg" alt="Rowing" onclick="openLightbox(this.src, this.alt)">
-            <div class="race-label"><span>05</span>Rowing 1000m</div>
-          </div>
-          <div class="race-run">1km RUN</div>
-          <div class="race-item">
-            <img src="assets/HYROX画像/ファーマーズキャリー.jpeg" alt="Farmers Carry" onclick="openLightbox(this.src, this.alt)">
-            <div class="race-label"><span>06</span>Farmers Carry 200m</div>
-          </div>
-        </div>
-        <div class="race-turn race-turn--down race-turn--left">1km RUN</div>
-        <div class="race-row race-row--right race-row--final">
-          <div class="race-item">
-            <img src="assets/HYROX画像/サンドバッグランジ.jpeg" alt="Sandbag Lunges" onclick="openLightbox(this.src, this.alt)">
-            <div class="race-label"><span>07</span>Sandbag Lunges 100m</div>
-          </div>
-          <div class="race-run">1km RUN</div>
-          <div class="race-item">
-            <img src="assets/HYROX画像/ウォールボール.jpeg" alt="Wall Balls" onclick="openLightbox(this.src, this.alt)">
-            <div class="race-label"><span>08</span>Wall Balls 100回</div>
-          </div>
-          <span class="race-badge race-badge--goal">GOAL</span>
-        </div>
+        </details>
       </div>
     </div>
   </section>
@@ -138,41 +295,42 @@
   <section class="why">
     <div class="container">
       <p class="section-label">WHY GOLD'S GYM</p>
-      <h2 class="section-title">なぜゴールドジムで<br>HYROXか</h2>
+      <h2 class="section-title">GOLD'S GYMで<br>HYROXを始める理由</h2>
       <div class="why-grid">
         <div class="why-card">
           <div class="why-img" style="background-image:url('https://hyroxjapan.com/wp-content/uploads/2022/06/Pro-Athlete-pushing-the-HYROX-sled-1024x682.jpg')"></div>
           <div class="why-text">
             <p class="why-num">01</p>
-            <h3>本番を想定できるHYROX設備</h3>
-            <p>SkiErg・Sled Push・Rowingなど、レースに近い動きを実践できます。</p>
+            <h3>HYROXエリアを自由に利用</h3>
+            <p>対象店舗では、決まったプログラム参加を前提にせず、自分のペースでHYROX種目の練習ができます。</p>
           </div>
         </div>
         <div class="why-card">
           <div class="why-img" style="background-image:url('https://hyroxjapan.com/wp-content/uploads/2022/06/female-HYROX-athlete-pulling-the-Sled.jpg')"></div>
           <div class="why-text">
             <p class="why-num">02</p>
-            <h3>筋力と持久力を同時に高める環境</h3>
-            <p>ウエイト・有酸素・ファンクショナルを組み合わせ、HYROXに必要な土台を作れます。</p>
+            <h3>本番を想定した練習ができる</h3>
+            <p>SkiErg、Sled、Rowingなどの種目を組み合わせ、レースに近い流れで練習できます。</p>
           </div>
         </div>
         <div class="why-card">
           <div class="why-img" style="background-image:url('https://hyroxjapan.com/wp-content/uploads/2022/06/Doubles-Athletes-finishing-the-HYROX-race.jpg')"></div>
           <div class="why-text">
             <p class="why-num">03</p>
-            <h3>正しいフォームを学べるサポート</h3>
-            <p>初めての方でも、動作のポイントや負荷設定をスタッフがサポートします。</p>
+            <h3>必要な方にはスタッフがアドバイス</h3>
+            <p>使い方やフォーム、負荷調整に迷った時は、目的に合わせてスタッフへ相談できます。</p>
           </div>
         </div>
         <div class="why-card">
           <div class="why-img" style="background-image:url('https://hyroxjapan.com/wp-content/uploads/2022/06/Relay-Team-finishing-the-HYROX-race-1024x682.jpg')"></div>
           <div class="why-text">
             <p class="why-num">04</p>
-            <h3>続けたくなる本気の空気感</h3>
-            <p>一人では追い込めないトレーニングも、ゴールドジムの環境だから継続できます。</p>
+            <h3>筋力と持久力を同時に鍛えられる</h3>
+            <p>ウエイト・有酸素・ファンクショナルを組み合わせ、HYROXに必要な身体の土台を作れます。</p>
           </div>
         </div>
       </div>
+      <p class="usage-note">一部スクール・イベント開催時はご利用いただけません。利用可能時間は店舗までお問い合わせください。</p>
     </div>
   </section>
 
@@ -180,95 +338,373 @@
   <section class="stores" id="stores">
     <div class="container">
       <p class="section-label">LOCATIONS</p>
-      <h2 class="section-title">対応店舗</h2>
-      <p class="stores-note">HYROX設備は常に利用できるとは限りません。利用可能時間や体験内容は、事前に各店舗へお問い合わせください。</p>
+      <h2 class="section-title section-title-with-badge">対応店舗 <span class="store-count-badge" id="store-count-badge">全11店舗</span></h2>
+      <p class="stores-note">HYROXエリアは対象店舗で自由に利用できます。必要な方にはスタッフが使い方や負荷設定をアドバイスします。<br>一部スクール・イベント開催時はご利用いただけません。利用可能時間は店舗までお問い合わせください。</p>
+      <div class="store-filter-tabs" aria-label="対応店舗のエリア絞り込み">
+        <button type="button" class="store-filter-btn active" data-area-filter="all">すべて</button>
+        <button type="button" class="store-filter-btn" data-area-filter="tokyo">東京</button>
+        <button type="button" class="store-filter-btn" data-area-filter="kanto">関東</button>
+        <button type="button" class="store-filter-btn" data-area-filter="kansai">関西</button>
+      </div>
       <div class="stores-grid">
 
-        <div class="store-card">
-          <img class="store-img" src="assets/店舗写真/HYROX東陽町.png" alt="ゴールドジム東陽町 HYROXトレーニングエリア">
+        <div class="store-card store-order-toyocho" data-area="tokyo" data-store-id="toyocho">
+          <img class="store-img" src="assets/store-photos/toyocho.png" alt="ゴールドジム東陽町スーパーセンター店 HYROXエリア">
           <div class="store-info">
-            <h3>GOLD'S GYM<br><span>東陽町</span></h3>
-            <a class="store-map-link" href="https://maps.google.com/?q=GOLD'S+GYM+東陽町+東京都江東区" target="_blank" rel="noopener"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
+            <h3>GOLD'S GYM<br><span>東陽町スーパーセンター店</span></h3>
+            <a class="store-phone" href="tel:0366602323">TEL 03-6660-2323</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('toyocho');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
             <p class="store-addr">東京メトロ東西線 東陽町駅</p>
             <div class="store-links">
+              <a href="https://script.google.com/a/macros/goldsgym.jp/s/AKfycbxdspVhT0ScCuyCSePr3S8Gsgm5taxiYnvJW-n-ceKxrAFMfJclZu4WjZEjByka3Z6y/exec" target="_blank" rel="noopener" class="store-btn store-btn--availability">利用可能時間を確認する</a>
               <a href="https://www.goldsgym.jp/shop/71221/" target="_blank" class="store-btn">ホームページ</a>
               <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry?CLUB_CD=000060" target="_blank" class="store-btn">入会予約</a>
-              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=1&CLUB_CD=000060" target="_blank" class="store-btn store-btn--gold">HYROX体験を予約する</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=2&CLUB_CD=000060" target="_blank" class="store-btn store-btn--gold">HYROXトレーニングを<br>予約する</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
             </div>
           </div>
         </div>
 
-        <div class="store-card">
-          <img class="store-img" src="assets/店舗写真/浦安千葉HYROX.png" alt="ゴールドジム浦安千葉 HYROXトレーニングエリア">
+        <div class="store-card store-order-urayasu" data-area="kanto" data-store-id="urayasu">
+          <img class="store-img" src="assets/store-photos/urayasu.png" alt="ゴールドジム浦安千葉 HYROXエリア">
           <div class="store-info">
-            <h3>GOLD'S GYM<br><span>浦安</span></h3>
-            <a class="store-map-link" href="https://maps.google.com/?q=GOLD'S+GYM+浦安+千葉県浦安市" target="_blank" rel="noopener"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
+            <h3>GOLD'S GYM<br><span>浦安千葉店</span></h3>
+            <a class="store-phone" href="tel:0473042828">TEL 047-304-2828</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('urayasu');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
             <p class="store-addr">東京メトロ東西線 浦安駅 徒歩1分</p>
             <div class="store-links">
+              <a href="https://script.google.com/a/macros/goldsgym.jp/s/AKfycbxdspVhT0ScCuyCSePr3S8Gsgm5taxiYnvJW-n-ceKxrAFMfJclZu4WjZEjByka3Z6y/exec" target="_blank" rel="noopener" class="store-btn store-btn--availability">利用可能時間を確認する</a>
               <a href="https://www.goldsgym.jp/shop/12160/" target="_blank" class="store-btn">ホームページ</a>
               <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry?CLUB_CD=000037" target="_blank" class="store-btn">入会予約</a>
-              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=1&CLUB_CD=000037" target="_blank" class="store-btn store-btn--gold">HYROX体験を予約する</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=2&CLUB_CD=000037" target="_blank" class="store-btn store-btn--gold">HYROXトレーニングを<br>予約する</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
             </div>
           </div>
         </div>
 
-        <div class="store-card">
-          <img class="store-img" src="assets/店舗写真/HYROX千葉ニュータウン.png" alt="ゴールドジム千葉ニュータウン HYROXトレーニングエリア">
+        <div class="store-card store-order-chiba" data-area="kanto" data-store-id="chiba">
+          <img class="store-img store-img--chiba-newtown" src="assets/store-photos/chiba-newtown.png" alt="ゴールドジム千葉ニュータウン HYROXエリア">
           <div class="store-info">
-            <h3>GOLD'S GYM<br><span>千葉ニュータウン</span></h3>
-            <a class="store-map-link" href="https://maps.google.com/?q=GOLD'S+GYM+千葉ニュータウン+千葉県印西市" target="_blank" rel="noopener"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
+            <h3>GOLD'S GYM<br><span>千葉ニュータウン店</span></h3>
+            <a class="store-phone" href="tel:0476471919">TEL 0476-47-1919</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('chiba');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
             <p class="store-addr">北総線 千葉ニュータウン中央駅 徒歩1分</p>
             <div class="store-links">
               <a href="https://www.goldsgym.jp/shop/18095/" target="_blank" class="store-btn">ホームページ</a>
               <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry?CLUB_CD=000065" target="_blank" class="store-btn">入会予約</a>
-              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=1&CLUB_CD=000065" target="_blank" class="store-btn store-btn--gold">HYROX体験を予約する</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=2&CLUB_CD=000065" target="_blank" class="store-btn store-btn--gold">HYROXトレーニングを<br>予約する</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
             </div>
           </div>
         </div>
 
-        <div class="store-card store-card--soon">
-          <div class="store-coming">
-            <span>COMING SOON</span>
-          </div>
+        <div class="store-card store-order-makuhari" data-area="kanto" data-store-id="makuhari">
+          <img class="store-img" src="assets/store-photos/makuhari-baypark.jpeg" alt="ゴールドジム幕張ベイパークアリーナ店 HYROXエリア">
           <div class="store-info">
-            <h3>GOLD'S GYM<br><span>幕張<br>ベイパークアリーナ</span></h3>
-            <a class="store-map-link" href="https://maps.google.com/?q=GOLD'S+GYM+幕張ベイパークアリーナ" target="_blank" rel="noopener"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
+            <h3>GOLD'S GYM<br><span>幕張<br>ベイパークアリーナ店</span></h3>
+            <a class="store-phone" href="tel:0432961616">TEL 043-296-1616</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('makuhari');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
             <p class="store-addr">JR京葉線 海浜幕張駅 北口 徒歩13分</p>
             <div class="store-links">
               <a href="https://www.goldsgym.jp/shop/12131" target="_blank" class="store-btn">ホームページ</a>
               <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry/?CLUB_CD=000071" target="_blank" class="store-btn">入会予約</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=2&CLUB_CD=000071" target="_blank" class="store-btn store-btn--gold">HYROXトレーニングを<br>予約する</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
             </div>
-            <p class="store-soon-text">HYROXトレーニング対応予定。詳細は決まり次第ご案内します。</p>
+          </div>
+        </div>
+
+        <div class="store-card store-order-hamamatsucho" data-area="tokyo" data-store-id="hamamatsucho">
+          <img class="store-img" src="assets/store-photos/hamamatsucho-tokyo.png" alt="ゴールドジム浜松町東京 HYROXエリア">
+          <div class="store-info">
+            <h3>GOLD'S GYM<br><span>浜松町東京店</span></h3>
+            <a class="store-phone" href="tel:0334342323">TEL 03-3434-2323</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('hamamatsucho');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
+            <p class="store-addr">JR浜松町駅 北口より徒歩2分</p>
+            <div class="store-links">
+              <a href="https://www.goldsgym.jp/shop/13210" target="_blank" rel="noopener" class="store-btn">ホームページ</a>
+              <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry?CLUB_CD=000046" target="_blank" rel="noopener" class="store-btn">入会予約</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=2&amp;CLUB_CD=000046" target="_blank" rel="noopener" class="store-btn store-btn--gold">HYROXトレーニングを<br>予約する</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="store-card store-order-ginza" data-area="tokyo" data-store-id="ginza">
+          <img class="store-img" src="assets/store-photos/ginza-tokyo.webp" alt="ゴールドジム銀座東京店 HYROXトレーニング器具">
+          <div class="store-info">
+            <h3>GOLD'S GYM<br><span>銀座東京店</span></h3>
+            <a class="store-phone" href="tel:0335357373">TEL 03-3535-7373</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('ginza');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
+            <p class="store-addr">銀座一丁目駅 徒歩1分／有楽町駅 徒歩4分</p>
+            <div class="store-links">
+              <a href="https://www.goldsgym.jp/shop/ginza-tokyo/" target="_blank" rel="noopener" class="store-btn">ホームページ</a>
+              <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry" target="_blank" rel="noopener" class="store-btn">入会予約</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=2" target="_blank" rel="noopener" class="store-btn store-btn--gold">HYROXトレーニングを<br>予約する</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="store-card store-order-harajuku-tokyo" data-area="tokyo" data-store-id="harajuku-tokyo">
+          <img class="store-img" src="assets/store-photos/harajuku-tokyo-studio-b.webp" alt="ゴールドジム原宿東京店 HYROXトレーニングスペース">
+          <div class="store-info">
+            <h3>GOLD'S GYM<br><span>原宿東京店</span></h3>
+            <a class="store-phone" href="tel:0357663131">TEL 03-5766-3131</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('harajuku-tokyo');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
+            <p class="store-addr">明治神宮前駅 徒歩1分／JR原宿駅 徒歩3分</p>
+            <div class="store-links">
+              <a href="https://www.goldsgym.jp/shop/harajuku-tokyo/" target="_blank" rel="noopener" class="store-btn">ホームページ</a>
+              <a href="https://goldsgym-membership.jp/nyukai/simulations/shop" target="_blank" rel="noopener" class="store-btn">入会予約</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=2" target="_blank" rel="noopener" class="store-btn store-btn--gold">HYROXトレーニングを<br>予約する</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="store-card store-order-harajuku-annex" data-area="tokyo" data-store-id="harajuku-annex">
+          <img class="store-img" src="assets/store-photos/harajuku-annex.jpg" alt="ゴールドジム原宿ANNEX HYROXトレーニングスペース">
+          <div class="store-info">
+            <h3>GOLD'S GYM<br><span>原宿ANNEX</span></h3>
+            <a class="store-phone" href="tel:0334087474">TEL 03-3408-7474</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('harajuku-annex');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
+            <p class="store-addr">明治神宮前駅・JR原宿駅より徒歩5分</p>
+            <div class="store-links">
+              <a href="https://www.goldsgym.jp/shop/harajuku-annex-tokyo/" target="_blank" rel="noopener" class="store-btn">ホームページ</a>
+              <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry" target="_blank" rel="noopener" class="store-btn">入会予約</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=2" target="_blank" rel="noopener" class="store-btn store-btn--gold">HYROXトレーニングを<br>予約する</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="store-card store-order-maebashi" data-area="kanto" data-store-id="maebashi">
+          <img class="store-img" src="assets/store-photos/maebashi-interchange-v3.jpg" alt="ゴールドジム前橋インター店 HYROXトレーニングエリア">
+          <div class="store-info">
+            <h3>GOLD'S GYM<br><span>前橋インター店</span></h3>
+            <a class="store-phone" href="tel:0273843033">TEL 027-384-3033</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('maebashi');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
+            <p class="store-addr">新前橋駅より徒歩20分・車5分</p>
+            <div class="store-links">
+              <a href="https://www.goldsgym.jp/shop/180824" target="_blank" rel="noopener" class="store-btn">ホームページ</a>
+              <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry?CLUB_CD=000075" target="_blank" rel="noopener" class="store-btn">入会予約</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=2&amp;CLUB_CD=000075" target="_blank" rel="noopener" class="store-btn store-btn--gold">HYROXトレーニングを<br>予約する</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="store-card store-order-saitama" data-area="kanto" data-store-id="saitama">
+          <img class="store-img store-img--saitama" src="assets/store-photos/saitama-super-arena.jpeg" alt="ゴールドジムさいたまスーパーアリーナ HYROXエリア">
+          <div class="store-info">
+            <h3>GOLD'S GYM<br><span>さいたま<br>アリーナ店</span></h3>
+            <a class="store-phone" href="tel:0486003939">TEL 048-600-3939</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('saitama');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
+            <p class="store-addr">さいたま新都心駅より徒歩3分、北与野駅より徒歩5分</p>
+            <div class="store-links">
+              <a href="https://www.goldsgym.jp/shop/11110" target="_blank" rel="noopener" class="store-btn">ホームページ</a>
+              <a href="https://www.goldsgym-membership.jp/nyukai/entries/entry?CLUB_CD=000005" target="_blank" rel="noopener" class="store-btn">入会予約</a>
+              <a href="https://www.goldsgym-membership.jp/kengaku/visits/entry?MODE=2&amp;CLUB_CD=000005" target="_blank" rel="noopener" class="store-btn store-btn--gold">HYROXトレーニングを<br>予約する</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="store-card store-order-kashihara" data-area="kansai" data-store-id="kashihara">
+          <img class="store-img" src="assets/store-photos/kashihara-nara.jpg" alt="ゴールドジム橿原奈良 HYROXトレーニングエリア">
+          <div class="store-info">
+            <h3>GOLD'S GYM<br><span>橿原奈良店</span></h3>
+            <a class="store-phone" href="tel:0744220330">TEL 0744-22-0330</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('kashihara');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
+            <p class="store-addr">近鉄京都線 新ノ口駅より徒歩約7分</p>
+            <div class="store-links">
+              <a href="https://www.goldsgym.jp/shop/190306" target="_blank" rel="noopener" class="store-btn">ホームページ</a>
+              <a href="https://goldsgym-fc.fitnesslink.jp/seriousfitness/entries/entry?CLUB_CD=010802" target="_blank" rel="noopener" class="store-btn">入会予約</a>
+              <a href="tel:0744220330" class="store-btn store-btn--gold">HYROXトレーニングを<br>問い合わせる</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
+            </div>
           </div>
         </div>
 
       </div>
+      <div class="store-carousel-dots" id="store-carousel-dots" aria-hidden="true"></div>
     </div>
   </section>
 
-  <!-- TRIAL FLOW -->
-  <section class="trial-flow" id="trial-flow">
+  <!-- EQUIPMENT -->
+  <section class="equipment" id="equipment">
     <div class="container">
-      <p class="section-label">TRIAL FLOW</p>
-      <h2 class="section-title">体験でできること</h2>
-      <p class="flow-lead">内容は目的や体力に合わせて調整できます。すべてを行う必要はなく、ご希望に応じて確認できる内容です。</p>
-      <div class="flow-grid">
-        <div class="flow-card">
-          <p class="flow-num">OPTION 01</p>
-          <h3>目的や不安の確認</h3>
-          <p>大会を目指したい、まず試したい、体力に不安があるなど、必要に応じて目的や運動経験を確認できます。</p>
-        </div>
-        <div class="flow-card">
-          <p class="flow-num">OPTION 02</p>
-          <h3>基本動作の確認</h3>
-          <p>SkiErg、Sled Push、Rowingなどを、無理のない範囲で体験しながら正しいフォームを確認できます。</p>
-        </div>
-        <div class="flow-card">
-          <p class="flow-num">OPTION 03</p>
-          <h3>続け方の相談</h3>
-          <p>希望される方には、大会出場・体力づくり・ダイエットなど、目的に合わせた続け方をご案内できます。</p>
+      <p class="section-label">EQUIPMENT CHECK</p>
+      <h2 class="section-title">店舗別 HYROX設備比較</h2>
+      <p class="equipment-lead">どの店舗で何の練習ができるかを一覧で確認できます。器具の対応状況と、本番同等の種目数を比較できます。</p>
+      <div class="equipment-legend" aria-label="設備記号の説明">
+        <span><strong data-status="same">●</strong> 本番と同じ器具</span>
+        <span><strong data-status="pending">△</strong> 他メーカーだが練習可能</span>
+        <span><strong data-status="none">✕</strong> 実施不可</span>
+        <span><strong data-status="soon">導入予定</strong> 対応予定</span>
+      </div>
+      <div class="equipment-table-wrap" id="equipment-table-wrap">
+        <div class="equipment-scroll-hint" id="equipment-scroll-hint">→ 横にスクロールできます</div>
+        <table class="equipment-table">
+          <thead>
+            <tr>
+              <th>店舗</th>
+              <th><span class="equipment-heading"><img src="assets/hyrox-events/skierg.webp" alt="" loading="lazy"><span>SkiErg</span></span></th>
+              <th><span class="equipment-heading"><img src="assets/hyrox-events/sled-push.jpeg" alt="" loading="lazy"><span>Sled Push</span></span></th>
+              <th><span class="equipment-heading"><img src="assets/hyrox-events/sled-pull.jpeg" alt="" loading="lazy"><span>Sled Pull</span></span></th>
+              <th><span class="equipment-heading"><img src="assets/hyrox-events/burpee-broad-jump.jpg" alt="" loading="lazy"><span>Burpee Broad Jump</span></span></th>
+              <th><span class="equipment-heading"><img src="assets/hyrox-events/rowing.jpeg" alt="" loading="lazy"><span>Rowing</span></span></th>
+              <th><span class="equipment-heading"><img src="assets/hyrox-events/farmers-carry.jpeg" alt="" loading="lazy"><span>Farmers Carry</span></span></th>
+              <th><span class="equipment-heading"><img src="assets/hyrox-events/sandbag-lunges.jpeg" alt="" loading="lazy"><span>Sandbag Lunges</span></span></th>
+              <th><span class="equipment-heading"><img src="assets/hyrox-events/wall-balls.jpeg" alt="" loading="lazy"><span>Wall Balls</span></span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-store-id="toyocho">
+              <th>東陽町スーパーセンター店</th>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+            </tr>
+            <tr data-store-id="urayasu">
+              <th>浦安千葉店</th>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="pending">△</td>
+            </tr>
+            <tr data-store-id="chiba">
+              <th>千葉ニュータウン店</th>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+            </tr>
+            <tr data-store-id="makuhari">
+              <th>幕張ベイパークアリーナ店</th>
+              <td data-status="pending">△</td>
+              <td data-status="pending">△</td>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="pending">△</td>
+              <td data-status="soon">COMING<br>SOON</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+            </tr>
+            <tr data-store-id="hamamatsucho">
+              <th>浜松町東京店</th>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+            </tr>
+            <tr data-store-id="ginza">
+              <th>銀座東京店</th>
+              <td data-status="none">×</td>
+              <td data-status="soon">導入予定</td>
+              <td data-status="soon">導入予定</td>
+              <td data-status="same">○</td>
+              <td data-status="none">×</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="none">×</td>
+            </tr>
+            <tr data-store-id="harajuku-tokyo">
+              <th>原宿東京店</th>
+              <td data-status="pending">△</td>
+              <td data-status="none">×</td>
+              <td data-status="none">×</td>
+              <td data-status="same">○</td>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+            </tr>
+            <tr data-store-id="harajuku-annex">
+              <th>原宿ANNEX</th>
+              <td data-status="pending">△</td>
+              <td data-status="none">×</td>
+              <td data-status="none">×</td>
+              <td data-status="same">○</td>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+            </tr>
+            <tr data-store-id="maebashi">
+              <th>前橋インター店</th>
+              <td data-status="none">×</td>
+              <td data-status="none">×</td>
+              <td data-status="none">×</td>
+              <td data-status="pending">△</td>
+              <td data-status="none">×</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+            </tr>
+            <tr data-store-id="saitama">
+              <th>さいたまアリーナ店</th>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="soon">COMING<br>SOON</td>
+            </tr>
+            <tr data-store-id="kashihara">
+              <th>橿原奈良店</th>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="pending">△</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="equipment-note">一部スクール・イベント開催時はご利用いただけません。利用可能時間は店舗までお問い合わせください。</p>
+    </div>
+  </section>
+
+  <!-- ACCESS MAP -->
+  <section class="access-map" id="access-map">
+    <div class="container">
+      <p class="section-label">ACCESS MAP</p>
+      <h2 class="section-title">アクセスマップ</h2>
+      <p class="access-map-note">各店舗の場所を地図で確認できます。営業時間・HYROX設備の利用可否は、事前に各店舗へお問い合わせください。</p>
+      <div class="map-area-tabs" aria-label="マップ表示エリア">
+        <button type="button" class="map-area-btn active" data-map-area="tokyo">東京</button>
+        <button type="button" class="map-area-btn" data-map-area="kanto">関東</button>
+        <button type="button" class="map-area-btn" data-map-area="kansai">関西</button>
+      </div>
+      <div class="leaflet-map-shell">
+        <div id="hyrox-store-map" class="hyrox-store-map" role="img" aria-label="対応店舗の地図">
+          <div class="map-loading">地図を読み込み中</div>
         </div>
       </div>
+      <div class="map-store-buttons" id="map-store-buttons" aria-label="店舗ピンを開く"></div>
     </div>
   </section>
 
@@ -281,13 +717,135 @@
       <p class="pricing-note">※ 入会金別途。各店舗の最新料金は公式サイトをご確認ください。</p>
 
       <div class="pricing-tabs">
-        <button class="tab-btn active" onclick="showStore('toyocho')">東陽町</button>
-        <button class="tab-btn" onclick="showStore('urayasu')">浦安</button>
+        <button class="tab-btn active" onclick="showStore('hamamatsucho')">浜松町東京店</button>
+        <button class="tab-btn" onclick="showStore('ginza')">銀座東京店</button>
+        <button class="tab-btn" onclick="showStore('harajuku-tokyo')">原宿東京店</button>
+        <button class="tab-btn" onclick="showStore('harajuku-annex')">原宿ANNEX</button>
+        <button class="tab-btn" onclick="showStore('toyocho')">東陽町スーパーセンター店</button>
+        <button class="tab-btn" onclick="showStore('urayasu')">浦安千葉店</button>
         <button class="tab-btn" onclick="showStore('chiba')">千葉ニュータウン</button>
+        <button class="tab-btn" onclick="showStore('makuhari')">幕張ベイパーク</button>
+        <button class="tab-btn" onclick="showStore('maebashi')">前橋インター店</button>
+        <button class="tab-btn" onclick="showStore('saitama')">さいたまアリーナ店</button>
+        <button class="tab-btn" onclick="showStore('kashihara')">橿原奈良店</button>
+      </div>
+      <label class="pricing-select-label" for="pricing-store-select">店舗を選択</label>
+      <select class="pricing-select" id="pricing-store-select" onchange="showStore(this.value)">
+        <option value="hamamatsucho">浜松町東京店</option>
+        <option value="ginza">銀座東京店</option>
+        <option value="harajuku-tokyo">原宿東京店</option>
+        <option value="harajuku-annex">原宿ANNEX</option>
+        <option value="toyocho">東陽町スーパーセンター店</option>
+        <option value="urayasu">浦安千葉店</option>
+        <option value="chiba">千葉ニュータウン</option>
+        <option value="makuhari">幕張ベイパーク</option>
+        <option value="maebashi">前橋インター店</option>
+        <option value="saitama">さいたまアリーナ店</option>
+        <option value="kashihara">橿原奈良店</option>
+      </select>
+
+      <!-- 浜松町東京 -->
+      <div class="pricing-table active" id="store-hamamatsucho">
+        <div class="plan-card">
+          <div class="plan-badge">人気No.1</div>
+          <h3 class="plan-name">フルタイム</h3>
+          <p class="plan-desc">全営業時間利用可能</p>
+          <p class="plan-price">¥<span>11,550</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">デイタイム</h3>
+          <p class="plan-desc">月～土・祝　※日曜利用不可<br>オープン～18：00</p>
+          <p class="plan-price">¥<span>9,900</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">BIZFIT</h3>
+          <p class="plan-desc">平日朝・夜の時間帯利用</p>
+          <p class="plan-price">¥<span>12,100</span><small>/月</small></p>
+        </div>
+        <div class="plan-card plan-visitor">
+          <h3 class="plan-name">ビジター</h3>
+          <p class="plan-desc">1回から利用可能（5時間まで）</p>
+          <p class="plan-price">¥<span>3,960</span><small>/回</small></p>
+        </div>
       </div>
 
-      <!-- 東陽町 -->
-      <div class="pricing-table active" id="store-toyocho">
+      <!-- 銀座東京 -->
+      <div class="pricing-table" id="store-ginza">
+        <div class="plan-card">
+          <div class="plan-badge">関東エリア</div>
+          <h3 class="plan-name">フルタイム</h3>
+          <p class="plan-desc">関東エリア対象店舗・全営業時間利用可能</p>
+          <p class="plan-price">¥<span>14,300</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">デイタイム</h3>
+          <p class="plan-desc">設定なし</p>
+          <p class="plan-price plan-price--text">―</p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">BIZFIT</h3>
+          <p class="plan-desc">平日の指定時間帯・銀座2店舗を利用可能</p>
+          <p class="plan-price">¥<span>14,850</span><small>/月</small></p>
+        </div>
+        <div class="plan-card plan-visitor">
+          <h3 class="plan-name">ビジター</h3>
+          <p class="plan-desc">1回5時間まで利用可能</p>
+          <p class="plan-price">¥<span>3,960</span><small>/回</small></p>
+        </div>
+      </div>
+
+      <!-- 原宿東京 -->
+      <div class="pricing-table" id="store-harajuku-tokyo">
+        <div class="plan-card">
+          <div class="plan-badge">関東エリア</div>
+          <h3 class="plan-name">フルタイム</h3>
+          <p class="plan-desc">関東直営店・全営業時間利用可能</p>
+          <p class="plan-price">¥<span>14,300</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">デイタイム</h3>
+          <p class="plan-desc">月～土・祝　※日曜利用不可<br>7:00～18:00</p>
+          <p class="plan-price">¥<span>12,100</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">BIZFIT</h3>
+          <p class="plan-desc">平日の指定時間帯・レンタル4点とロッカー付き</p>
+          <p class="plan-price">¥<span>14,850</span><small>/月</small></p>
+        </div>
+        <div class="plan-card plan-visitor">
+          <h3 class="plan-name">ビジター</h3>
+          <p class="plan-desc">1回5時間まで利用可能</p>
+          <p class="plan-price">¥<span>3,960</span><small>/回</small></p>
+        </div>
+      </div>
+
+      <!-- 原宿ANNEX -->
+      <div class="pricing-table" id="store-harajuku-annex">
+        <div class="plan-card">
+          <div class="plan-badge">関東エリア</div>
+          <h3 class="plan-name">フルタイム</h3>
+          <p class="plan-desc">関東対象店舗・全営業時間利用可能</p>
+          <p class="plan-price">¥<span>14,300</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">デイタイム</h3>
+          <p class="plan-desc">月～土・祝　※日曜利用不可<br>オープン～18：00</p>
+          <p class="plan-price">¥<span>12,100</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">BIZFIT</h3>
+          <p class="plan-desc">平日の朝・夜、原宿2店舗を利用可能</p>
+          <p class="plan-price">¥<span>14,850</span><small>/月</small></p>
+        </div>
+        <div class="plan-card plan-visitor">
+          <h3 class="plan-name">ビジター</h3>
+          <p class="plan-desc">1回5時間まで利用可能</p>
+          <p class="plan-price">¥<span>3,960</span><small>/回</small></p>
+        </div>
+      </div>
+
+      <!-- 東陽町スーパーセンター店 -->
+      <div class="pricing-table" id="store-toyocho">
         <div class="plan-card">
           <div class="plan-badge">人気No.1</div>
           <h3 class="plan-name">フルタイム</h3>
@@ -296,7 +854,7 @@
         </div>
         <div class="plan-card">
           <h3 class="plan-name">デイタイム</h3>
-          <p class="plan-desc">月〜土・祝 OPEN〜18:00</p>
+          <p class="plan-desc">月～土・祝　※日曜利用不可<br>オープン～18：00</p>
           <p class="plan-price">¥<span>9,900</span><small>/月</small></p>
         </div>
         <div class="plan-card">
@@ -321,7 +879,7 @@
         </div>
         <div class="plan-card">
           <h3 class="plan-name">デイタイム</h3>
-          <p class="plan-desc">月〜土・祝 OPEN〜18:00</p>
+          <p class="plan-desc">月～土・祝　※日曜利用不可<br>オープン～18：00</p>
           <p class="plan-price">¥<span>9,900</span><small>/月</small></p>
         </div>
         <div class="plan-card">
@@ -346,7 +904,7 @@
         </div>
         <div class="plan-card">
           <h3 class="plan-name">デイタイム</h3>
-          <p class="plan-desc">月〜土・祝 OPEN〜18:00</p>
+          <p class="plan-desc">月～土・祝　※日曜利用不可<br>オープン～18：00</p>
           <p class="plan-price">¥<span>9,350</span><small>/月</small></p>
         </div>
         <div class="plan-card">
@@ -357,6 +915,104 @@
         <div class="plan-card plan-visitor">
           <h3 class="plan-name">ビジター</h3>
           <p class="plan-desc">1回から利用可能（5時間まで）</p>
+          <p class="plan-price">¥<span>2,750</span><small>/回</small></p>
+        </div>
+      </div>
+
+      <!-- 幕張ベイパークアリーナ店 -->
+      <div class="pricing-table" id="store-makuhari">
+        <div class="plan-card">
+          <div class="plan-badge">人気No.1</div>
+          <h3 class="plan-name">フルタイム</h3>
+          <p class="plan-desc">営業時間内いつでも利用可能</p>
+          <p class="plan-price">¥<span>11,550</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">デイタイム</h3>
+          <p class="plan-desc">月～土・祝　※日曜利用不可<br>オープン～18：00</p>
+          <p class="plan-price">¥<span>9,900</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">ウィークエンド</h3>
+          <p class="plan-desc">土・日・祝 終日利用</p>
+          <p class="plan-price">¥<span>8,250</span><small>/月</small></p>
+        </div>
+        <div class="plan-card plan-visitor">
+          <h3 class="plan-name">ビジター</h3>
+          <p class="plan-desc">1回から利用可能</p>
+          <p class="plan-price">¥<span>3,080</span><small>/日</small></p>
+        </div>
+      </div>
+
+      <!-- さいたまスーパーアリーナ -->
+      <div class="pricing-table" id="store-maebashi">
+        <div class="plan-card">
+          <div class="plan-badge">人気No.1</div>
+          <h3 class="plan-name">フルタイム</h3>
+          <p class="plan-desc">全営業時間利用可能</p>
+          <p class="plan-price">¥<span>10,450</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">デイタイム</h3>
+          <p class="plan-desc">月～土・祝　※日曜利用不可<br>オープン～18：00</p>
+          <p class="plan-price">¥<span>8,250</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">ウィークエンド</h3>
+          <p class="plan-desc">土・日・祝 全営業時間</p>
+          <p class="plan-price">¥<span>6,820</span><small>/月</small></p>
+        </div>
+        <div class="plan-card plan-visitor">
+          <h3 class="plan-name">ビジター</h3>
+          <p class="plan-desc">1回5時間まで利用可能</p>
+          <p class="plan-price">¥<span>2,860</span><small>/回</small></p>
+        </div>
+      </div>
+
+      <div class="pricing-table" id="store-saitama">
+        <div class="plan-card">
+          <div class="plan-badge">人気No.1</div>
+          <h3 class="plan-name">フルタイム</h3>
+          <p class="plan-desc">全営業時間利用可能</p>
+          <p class="plan-price">¥<span>11,550</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">デイタイム</h3>
+          <p class="plan-desc">月～土・祝　※日曜利用不可<br>オープン～18：00</p>
+          <p class="plan-price">¥<span>9,900</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">ウィークエンド</h3>
+          <p class="plan-desc">土・日・祝 終日利用</p>
+          <p class="plan-price">¥<span>8,250</span><small>/月</small></p>
+        </div>
+        <div class="plan-card plan-visitor">
+          <h3 class="plan-name">ビジター</h3>
+          <p class="plan-desc">1回から利用可能（5時間まで）</p>
+          <p class="plan-price">¥<span>3,080</span><small>/回</small></p>
+        </div>
+      </div>
+
+      <div class="pricing-table" id="store-kashihara">
+        <div class="plan-card">
+          <div class="plan-badge">人気No.1</div>
+          <h3 class="plan-name">フルタイム</h3>
+          <p class="plan-desc">橿原奈良店・全営業時間利用可能</p>
+          <p class="plan-price">¥<span>9,900</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">デイタイム</h3>
+          <p class="plan-desc">月～土・祝　※日曜利用不可<br>オープン～18：00</p>
+          <p class="plan-price">¥<span>8,250</span><small>/月</small></p>
+        </div>
+        <div class="plan-card">
+          <h3 class="plan-name">ホリディ</h3>
+          <p class="plan-desc">土・日・祝のみ利用可能</p>
+          <p class="plan-price">¥<span>7,700</span><small>/月</small></p>
+        </div>
+        <div class="plan-card plan-visitor">
+          <h3 class="plan-name">ビジター</h3>
+          <p class="plan-desc">1回5時間まで利用可能</p>
           <p class="plan-price">¥<span>2,750</span><small>/回</small></p>
         </div>
       </div>
@@ -390,6 +1046,24 @@
         </div>
         <div class="faq-item">
           <button class="faq-q" onclick="toggleFaq(this)">
+            HYROXエリアは自由に利用できますか？
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>対象店舗では、ご自身のトレーニングとしてHYROXエリアを利用できます。必要な方にはスタッフが使い方や負荷調整をアドバイスします。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            いつでも利用できますか？
+            <span class="faq-icon">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>一部スクール・イベント開催時はご利用いただけません。利用可能時間は店舗までお問い合わせください。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
             体力に自信がなくても大丈夫ですか？
             <span class="faq-icon">＋</span>
           </button>
@@ -415,24 +1089,6 @@
             <p>HYROXで使用される動作や器具を体験しながら、基本的な流れやトレーニング方法を確認できます。</p>
           </div>
         </div>
-        <div class="faq-item">
-          <button class="faq-q" onclick="toggleFaq(this)">
-            3店舗すべてで練習できますか？
-            <span class="faq-icon">＋</span>
-          </button>
-          <div class="faq-a">
-            <p>エリア会員は複数店舗の利用が可能です。詳細は各店舗スタッフへお問い合わせください。</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" onclick="toggleFaq(this)">
-            大会出場のサポートはありますか？
-            <span class="faq-icon">＋</span>
-          </button>
-          <div class="faq-a">
-            <p>大会情報のご案内や、出場に向けたトレーニングプログラムのご提案も対応しています。スタッフへご相談ください。</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -443,7 +1099,7 @@
       <h2 class="cta-title">まずは一度、HYROXを体感してください。</h2>
       <p class="cta-desc">走る、押す、引く、運ぶ、投げる。<br>普段のトレーニングとは違う達成感があります。<br><br>強引な勧誘は一切ありません。<br>初心者の方もお気軽にご参加ください。</p>
       <div class="cta-buttons">
-        <a href="#stores" class="btn-primary" onclick="smoothTo('stores');return false;">HYROX体験を予約する</a>
+        <a href="#stores" class="btn-primary" onclick="smoothTo('stores');return false;">HYROXトレーニングを予約する</a>
       </div>
     </div>
   </section>
@@ -456,7 +1112,7 @@
         <span class="footer-brand-cross">×</span>
         <img src="assets/images/hyrox-logo.png" alt="HYROX" class="hyrox-logo-img hyrox-logo-img--footer">
       </div>
-      <p class="footer-stores">千葉ニュータウン ／ 東陽町 ／ 浦安</p>
+      <p class="footer-stores">浜松町東京店 ／ 銀座東京店 ／ 原宿東京店 ／ 原宿ANNEX ／ 東陽町スーパーセンター店 ／ 浦安千葉店 ／ 千葉ニュータウン店 ／ 幕張ベイパークアリーナ店 ／ 前橋インター店 ／ さいたまアリーナ店 ／ 橿原奈良店</p>
       <p class="footer-copy">© 2026 Gold's Gym Japan. All rights reserved.</p>
     </div>
   </footer>
@@ -466,6 +1122,25 @@
     <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
   </div>
 
-  <script src="script.js"></script>
+  <!-- RULE MODAL -->
+  <div id="rule-modal" class="rule-modal" aria-hidden="true">
+    <div class="rule-modal-panel" role="dialog" aria-modal="true" aria-labelledby="rule-modal-title">
+      <button type="button" class="rule-modal-close" onclick="closeRuleModal()" aria-label="閉じる">×</button>
+      <div class="rule-modal-grid">
+        <div class="rule-modal-main">
+          <p class="section-label">EVENT DETAIL</p>
+          <h2 id="rule-modal-title"></h2>
+          <p id="rule-modal-subtitle" class="rule-modal-subtitle"></p>
+          <div class="rule-spec-grid" id="rule-spec-grid"></div>
+          <div class="rule-modal-block">
+            <h3>HYROX公式ルール</h3>
+            <ul id="rule-modal-rules"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=20260910-1"></script>
 </body>
 </html>
