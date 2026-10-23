@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GOLD'S GYM ハイロックストレーニングクラブ | 対応店舗公式ページ</title>
   <meta name="description" content="GOLD'S GYMのハイロックストレーニングクラブ（HYROX TRAINING CLUB）の対応店舗、種目ルール、設備比較、体験予約をまとめた公式ページです。">
-  <link rel="stylesheet" href="style.css?v=20261023-map1">
+  <link rel="stylesheet" href="style.css?v=20261023-hakata1">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -338,13 +338,14 @@
   <section class="stores" id="stores">
     <div class="container">
       <p class="section-label">LOCATIONS</p>
-      <h2 class="section-title section-title-with-badge">対応店舗 <span class="store-count-badge" id="store-count-badge">全11店舗</span></h2>
+      <h2 class="section-title section-title-with-badge">対応店舗 <span class="store-count-badge" id="store-count-badge">全12店舗</span></h2>
       <p class="stores-note">HYROXエリアは対象店舗で自由に利用できます。必要な方にはスタッフが使い方や負荷設定をアドバイスします。<br>一部スクール・イベント開催時はご利用いただけません。利用可能時間は店舗までお問い合わせください。</p>
       <div class="store-filter-tabs" aria-label="対応店舗のエリア絞り込み">
         <button type="button" class="store-filter-btn active" data-area-filter="all">すべて</button>
         <button type="button" class="store-filter-btn" data-area-filter="tokyo">東京</button>
         <button type="button" class="store-filter-btn" data-area-filter="kanto">関東</button>
         <button type="button" class="store-filter-btn" data-area-filter="kansai">関西</button>
+        <button type="button" class="store-filter-btn" data-area-filter="kyushu">九州</button>
       </div>
       <div class="stores-grid">
 
@@ -527,6 +528,23 @@
           </div>
         </div>
 
+        <div class="store-card store-order-hakata" data-area="kyushu" data-store-id="hakata">
+          <div class="store-capability"><strong>全8種目に対応</strong><span>本番と同じ器具で実施可能</span></div>
+          <div class="store-info">
+            <h3>GOLD'S GYM<br><span>コマーシャルモール<br>博多店</span></h3>
+            <p class="store-affiliate store-affiliate--registered">HYROXアフィリエイトジム登録済み</p>
+            <a class="store-phone" href="tel:0924777979">TEL 092-477-7979</a>
+            <a class="store-map-link" href="#access-map" onclick="openStoreMap('hakata');return false;">Googleマップ</a>
+            <p class="store-addr">JR竹下駅より徒歩18分<br>西鉄バス「東光寺北口」降車 徒歩2分</p>
+            <p class="store-addr">福岡県福岡市博多区東光寺町2-6-40<br>コマーシャルモール博多 2F</p>
+            <div class="store-links">
+              <span class="store-btn store-btn--availability">会員・ビジターとも自由利用</span>
+              <a href="https://www.goldsgym.jp/shop/commercial-mall-hakata/" target="_blank" rel="noopener" class="store-btn">ホームページ</a>
+              <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="store-carousel-dots" id="store-carousel-dots" aria-hidden="true"></div>
     </div>
@@ -682,6 +700,17 @@
               <td data-status="same">○</td>
               <td data-status="same">○</td>
             </tr>
+            <tr data-store-id="hakata">
+              <th>コマーシャルモール博多店</th>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+              <td data-status="same">○</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -699,6 +728,7 @@
         <button type="button" class="map-area-btn active" data-map-area="tokyo">東京</button>
         <button type="button" class="map-area-btn" data-map-area="kanto">関東</button>
         <button type="button" class="map-area-btn" data-map-area="kansai">関西</button>
+        <button type="button" class="map-area-btn" data-map-area="kyushu">九州</button>
       </div>
       <div class="google-map-shell">
         <iframe id="hyrox-store-map" class="hyrox-store-map" title="浜松町東京店のGoogleマップ" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -733,6 +763,7 @@
         <button class="tab-btn" onclick="showStore('maebashi')">前橋インター店</button>
         <button class="tab-btn" onclick="showStore('saitama')">さいたまアリーナ店</button>
         <button class="tab-btn" onclick="showStore('kashihara')">橿原奈良店</button>
+        <button class="tab-btn" onclick="showStore('hakata')">コマーシャルモール博多店</button>
       </div>
       <label class="pricing-select-label" for="pricing-store-select">店舗を選択</label>
       <select class="pricing-select" id="pricing-store-select" onchange="showStore(this.value)">
@@ -747,6 +778,7 @@
         <option value="maebashi">前橋インター店</option>
         <option value="saitama">さいたまアリーナ店</option>
         <option value="kashihara">橿原奈良店</option>
+        <option value="hakata">コマーシャルモール博多店</option>
       </select>
 
       <!-- 浜松町東京 -->
@@ -1022,6 +1054,16 @@
         </div>
       </div>
 
+      <div class="pricing-table" id="store-hakata">
+        <div class="plan-card plan-card--wide">
+          <h3 class="plan-name">会員・ビジターとも自由利用</h3>
+          <p class="plan-desc">HYROX設備は通常の施設利用料金でご利用いただけます。</p>
+          <p class="plan-price">¥<span>0</span><small>HYROX設備の追加料金</small></p>
+          <p class="plan-desc">会費・ビジター料金は公式店舗ページをご確認ください。</p>
+          <a class="store-btn store-btn--gold" href="https://www.goldsgym.jp/shop/commercial-mall-hakata/" target="_blank" rel="noopener">公式店舗ページで料金を確認する</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -1117,7 +1159,7 @@
         <span class="footer-brand-cross">×</span>
         <img src="assets/images/hyrox-logo.png" alt="HYROX" class="hyrox-logo-img hyrox-logo-img--footer">
       </div>
-      <p class="footer-stores">浜松町東京店 ／ 銀座東京店 ／ 原宿東京店 ／ 原宿ANNEX ／ 東陽町スーパーセンター店 ／ 浦安千葉店 ／ 千葉ニュータウン店 ／ 幕張ベイパークアリーナ店 ／ 前橋インター店 ／ さいたまアリーナ店 ／ 橿原奈良店</p>
+      <p class="footer-stores">浜松町東京店 ／ 銀座東京店 ／ 原宿東京店 ／ 原宿ANNEX ／ 東陽町スーパーセンター店 ／ 浦安千葉店 ／ 千葉ニュータウン店 ／ 幕張ベイパークアリーナ店 ／ 前橋インター店 ／ さいたまアリーナ店 ／ 橿原奈良店 ／ コマーシャルモール博多店</p>
       <p class="footer-copy">© 2026 Gold's Gym Japan. All rights reserved.</p>
     </div>
   </footer>
@@ -1146,6 +1188,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=20261023-map1"></script>
+  <script src="script.js?v=20261023-hakata1"></script>
 </body>
 </html>
