@@ -318,7 +318,8 @@ const STORES = [
     lat: 35.6571,
     lng: 139.7560,
     access: 'JR浜松町駅 北口より徒歩2分',
-    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+浜松町東京'
+    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+浜松町東京',
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.816415206134!2d139.7586332!3d35.65689449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bcc73e93fff%3A0x441f9d8f52747d8e!2z44K044O844Or44OJ44K444OgIOa1nOadvueUuuadseS6rA!5e0!3m2!1sja!2sjp!4v1792740887213!5m2!1sja!2sjp"
   },
   {
     id: 'ginza',
@@ -327,7 +328,8 @@ const STORES = [
     lat: 35.6747,
     lng: 139.7668,
     access: '銀座一丁目駅 徒歩1分／有楽町駅 徒歩4分',
-    gmapUrl: 'https://www.google.com/maps/search/?api=1&query=ゴールドジム銀座東京'
+    gmapUrl: 'https://www.google.com/maps/search/?api=1&query=ゴールドジム銀座東京',
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.55811122386!2d139.76594194999998!3d35.67414015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be4ead83ce3%3A0xaf620a93e625be54!2z44K044O844Or44OJ44K444OgIOmKgOW6p-adseS6rA!5e0!3m2!1sja!2sjp!4v1792741145166!5m2!1sja!2sjp"
   },
   {
     id: 'harajuku-tokyo',
@@ -336,7 +338,8 @@ const STORES = [
     lat: 35.6686494,
     lng: 139.7044101,
     access: '明治神宮前駅 徒歩1分／JR原宿駅 徒歩3分',
-    gmapUrl: 'https://www.google.com/maps/search/?api=1&query=ゴールドジム原宿東京'
+    gmapUrl: 'https://www.google.com/maps/search/?api=1&query=ゴールドジム原宿東京',
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.332050753165!2d139.70768655!3d35.66882510000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca4fad50391%3A0x5a7ff931530f3c36!2z44K044O844Or44OJ44K444Og5Y6f5a6_5p2x5Lqs!5e0!3m2!1sja!2sjp!4v1792741150205!5m2!1sja!2sjp"
   },
   {
     id: 'harajuku-annex',
@@ -345,7 +348,8 @@ const STORES = [
     lat: 35.6706619,
     lng: 139.706727,
     access: '明治神宮前駅・JR原宿駅より徒歩5分',
-    gmapUrl: 'https://www.google.com/maps/place/ゴールドジム原宿ANNEX/@35.6706619,139.706727,17z'
+    gmapUrl: 'https://www.google.com/maps/place/ゴールドジム原宿ANNEX/@35.6706619,139.706727,17z',
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2574669453143!2d139.706727!3d35.67066189999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca359204d67%3A0xeef9655544633332!2z44K044O844Or44OJ44K444Og5Y6f5a6_QU5ORVg!5e0!3m2!1sja!2sjp!4v1792741153975!5m2!1sja!2sjp"
   },
   {
     id: 'toyocho',
@@ -354,7 +358,8 @@ const STORES = [
     lat: 35.6693,
     lng: 139.8174,
     access: '東京メトロ東西線 東陽町駅',
-    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+東陽町+東京都江東区'
+    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+東陽町+東京都江東区',
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.443173148025!2d139.8163314!3d35.6660883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188854f37b28ef%3A0xe6487f3370ebaed!2z44K044O844Or44OJ44K444OgIOadsemZveeUuuOCueODvOODkeODvOOCu-ODs-OCv-ODvA!5e0!3m2!1sja!2sjp!4v1792741157834!5m2!1sja!2sjp"
   },
   {
     id: 'urayasu',
@@ -363,7 +368,8 @@ const STORES = [
     lat: 35.6657,
     lng: 139.8930,
     access: '東京メトロ東西線 浦安駅 徒歩1分',
-    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+浦安+千葉県浦安市'
+    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+浦安+千葉県浦安市',
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.4471115070214!2d139.8938149!3d35.66599130000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188781b28a57a7%3A0x6dbf8b000d1eb568!2z44K044O844Or44OJ44K444OgIOa1puWuieWNg-iRiQ!5e0!3m2!1sja!2sjp!4v1792741161632!5m2!1sja!2sjp"
   },
   {
     id: 'makuhari',
@@ -372,7 +378,8 @@ const STORES = [
     lat: 35.6497,
     lng: 140.0417,
     access: 'JR京葉線 海浜幕張駅 北口 徒歩13分',
-    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+幕張ベイパークアリーナ'
+    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+幕張ベイパークアリーナ',
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.251101346973!2d140.0498385!3d35.6461846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602283f7b1a10e5d%3A0x2de05bff7b9a1b83!2z44K044O844Or44OJ44K444OgIOW5leW8teODmeOCpOODkeODvOOCr-OCouODquODvOODiuW6lw!5e0!3m2!1sja!2sjp!4v1792741169215!5m2!1sja!2sjp"
   },
   {
     id: 'chiba',
@@ -381,7 +388,8 @@ const STORES = [
     lat: 35.8005,
     lng: 140.1144,
     access: '北総線 千葉ニュータウン中央駅 徒歩1分',
-    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+千葉ニュータウン+千葉県印西市'
+    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+千葉ニュータウン+千葉県印西市',
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.0462371405865!2d140.11714220000002!3d35.7987982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60227dd3f185f6df%3A0x2f512258e11d9d44!2z44K044O844Or44OJ44K444OgIOWNg-iRieODi-ODpeODvOOCv-OCpuODsw!5e0!3m2!1sja!2sjp!4v1792741165429!5m2!1sja!2sjp"
   },
   {
     id: 'saitama',
@@ -390,7 +398,8 @@ const STORES = [
     lat: 35.8948,
     lng: 139.6315,
     access: 'さいたま新都心駅より徒歩3分、北与野駅より徒歩5分',
-    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+さいたまスーパーアリーナ'
+    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+さいたまスーパーアリーナ',
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.1461734519116!2d139.631707!3d35.8944355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c10ced0c1137%3A0x92b02b6cda0533ce!2z44K044O844Or44OJ44K444OgIOOBleOBhOOBn-OBvuOCueODvOODkeODvOOCouODquODvOODig!5e0!3m2!1sja!2sjp!4v1792741176834!5m2!1sja!2sjp"
   },
   {
     id: 'maebashi',
@@ -399,7 +408,8 @@ const STORES = [
     lat: 36.3816,
     lng: 139.0220,
     access: '新前橋駅より徒歩20分・車5分',
-    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+前橋インター+群馬県高崎市中尾町44'
+    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+前橋インター+群馬県高崎市中尾町44',
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.4266104757144!2d139.0338974!3d36.374665300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ef30c20c7e241%3A0x121c4a384ef8333b!2z44K044O844Or44OJ44K444Og5YmN5qmL44Kk44Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1792741173012!5m2!1sja!2sjp"
   },
   {
     id: 'kashihara',
@@ -408,16 +418,14 @@ const STORES = [
     lat: 34.5293036,
     lng: 135.7965698,
     access: '近鉄京都線 新ノ口駅より徒歩約7分',
-    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+橿原奈良+奈良県橿原市十市町1222-1'
+    gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+橿原奈良+奈良県橿原市十市町1222-1',
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.956154764606!2d135.79658089999998!3d34.529338800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60013381cb9a2ef5%3A0x903e9043547e0ddf!2z44K044O844Or44OJ44K444Og5qm_5Y6f5aWI6Imv!5e0!3m2!1sja!2sjp!4v1792741180759!5m2!1sja!2sjp"
   }
 ];
 
-let storeMap = null;
-let storeMapInit = null;
-let storeMarkers = {};
 let mapArea = 'tokyo';
-let leafletLoading = null;
-let pendingMapStoreId = null;
+let selectedMapStoreId = 'hamamatsucho';
+let mapReady = false;
 
 function getAreaStores(area) {
   return STORES
@@ -425,173 +433,88 @@ function getAreaStores(area) {
     .sort((a, b) => officialStoreOrder.indexOf(a.name) - officialStoreOrder.indexOf(b.name));
 }
 
-function loadLeaflet() {
-  if (window.L) return Promise.resolve(window.L);
-  if (leafletLoading) return leafletLoading;
-
-  leafletLoading = new Promise((resolve, reject) => {
-    const css = document.createElement('link');
-    css.rel = 'stylesheet';
-    css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
-    css.integrity = 'sha256-p4NxAoJBhIINfQK+5NeS5nJxk8YPmYH7Bz2nD+zH5A=';
-    css.crossOrigin = '';
-    document.head.appendChild(css);
-
-    const script = document.createElement('script');
-    script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
-    script.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
-    script.crossOrigin = '';
-    script.onload = () => resolve(window.L);
-    script.onerror = reject;
-    document.body.appendChild(script);
-  });
-
-  return leafletLoading;
-}
-
-function storePopupHtml(store) {
-  return `
-    <div class="map-popup-title">${store.name}</div>
-    <div class="map-popup-access">${store.access}</div>
-    <a class="map-popup-link" href="${store.gmapUrl}" target="_blank" rel="noopener">Googleマップで開く</a>
-  `;
-}
-
-function fitMapToArea(area) {
-  if (!storeMap || !window.L) return;
-  const bounds = window.L.latLngBounds(getAreaStores(area).map(store => [store.lat, store.lng]));
-  storeMap.fitBounds(bounds, { padding: [42, 42], animate: true, duration: 0.7 });
-}
-
 function renderMapStoreButtons(area) {
   const holder = document.getElementById('map-store-buttons');
   if (!holder) return;
   holder.innerHTML = getAreaStores(area).map(store => (
-    `<button type="button" class="map-store-button" data-store-id="${store.id}" onclick="focusStoreMarker('${store.id}')">${store.name}</button>`
+    `<button type="button" class="map-store-button${store.id === selectedMapStoreId ? ' active' : ''}" data-store-id="${store.id}" aria-pressed="${store.id === selectedMapStoreId}">${store.name}</button>`
   )).join('');
 }
 
-function setMapArea(area) {
-  mapArea = area;
+function updateStoreMap() {
+  const store = STORES.find(item => item.id === selectedMapStoreId);
+  const frame = document.getElementById('hyrox-store-map');
+  if (!store || !frame) return;
+
+  frame.title = `${store.name}のGoogleマップ`;
+  document.getElementById('map-selected-name').textContent = store.name;
+  document.getElementById('map-selected-access').textContent = store.access;
+  const link = document.getElementById('map-external-link');
+  link.href = store.gmapUrl;
+  link.setAttribute('aria-label', `${store.name}をGoogleマップで開く（別タブ）`);
+
   document.querySelectorAll('.map-area-btn').forEach(button => {
-    button.classList.toggle('active', button.dataset.mapArea === area);
+    const selected = button.dataset.mapArea === mapArea;
+    button.classList.toggle('active', selected);
+    button.setAttribute('aria-pressed', String(selected));
   });
-  renderMapStoreButtons(area);
-  fitMapToArea(area);
+  renderMapStoreButtons(mapArea);
+  if (mapReady && frame.getAttribute('src') !== store.embedUrl) {
+    frame.src = store.embedUrl;
+  }
 }
 
-function focusStoreMarker(storeId) {
+function setMapArea(area) {
+  const stores = getAreaStores(area);
+  if (!stores.length) return;
+  mapArea = area;
+  if (!stores.some(store => store.id === selectedMapStoreId)) {
+    selectedMapStoreId = stores[0].id;
+  }
+  mapReady = true;
+  updateStoreMap();
+}
+
+function focusStoreMap(storeId) {
   const store = STORES.find(item => item.id === storeId);
   if (!store) return;
-  pendingMapStoreId = storeId;
-  const section = document.getElementById('access-map');
-  if (section) section.scrollIntoView({ behavior: 'smooth' });
-  initStoreMap().then(() => {
-    setMapArea(store.area);
-    const marker = storeMarkers[storeId];
-    if (!marker) return;
-    document.querySelectorAll('.map-store-button').forEach(button => {
-      button.classList.toggle('active', button.dataset.storeId === storeId);
-    });
-    storeMap.flyTo([store.lat, store.lng], 14, { duration: 0.7 });
-    marker.openPopup();
-    pendingMapStoreId = null;
-  });
+  selectedMapStoreId = store.id;
+  mapArea = store.area;
+  mapReady = true;
+  updateStoreMap();
 }
 
 function openStoreMap(storeId) {
-  focusStoreMarker(storeId);
-}
-
-function initStoreMap() {
-  const mapEl = document.getElementById('hyrox-store-map');
-  if (!mapEl) return Promise.resolve();
-  if (storeMap) {
-    setTimeout(() => storeMap.invalidateSize(), 150);
-    return Promise.resolve(storeMap);
-  }
-  if (storeMapInit) return storeMapInit;
-
-  storeMapInit = loadLeaflet().then((L) => {
-    storeMap = L.map(mapEl, {
-      scrollWheelZoom: false,
-      zoomControl: true
-    });
-
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: 'abcd',
-      maxZoom: 19
-    }).addTo(storeMap);
-
-    const goldIcon = L.divIcon({
-      className: 'gold-map-marker-wrap',
-      html: '<div class="gold-map-marker"></div>',
-      iconSize: [28, 28],
-      iconAnchor: [14, 28],
-      popupAnchor: [0, -28]
-    });
-
-    STORES.forEach((store) => {
-      const marker = L.marker([store.lat, store.lng], { icon: goldIcon })
-        .bindPopup(storePopupHtml(store))
-        .addTo(storeMap);
-      storeMarkers[store.id] = marker;
-    });
-
-    mapEl.querySelector('.map-loading')?.remove();
-    renderMapStoreButtons(mapArea);
-    setMapArea(mapArea);
-    if (pendingMapStoreId) focusStoreMarker(pendingMapStoreId);
-    requestAnimationFrame(() => {
-      storeMap.invalidateSize();
-      fitMapToArea(mapArea);
-    });
-    return storeMap;
-  });
-
-  return storeMapInit;
+  focusStoreMap(storeId);
+  const section = document.getElementById('access-map');
+  if (section) section.scrollIntoView({ behavior: 'smooth' });
 }
 
 function setupLazyMap() {
   const section = document.getElementById('access-map');
   if (!section) return;
+  updateStoreMap();
   document.querySelectorAll('.map-area-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      initStoreMap().then(() => setMapArea(button.dataset.mapArea));
-    });
+    button.addEventListener('click', () => setMapArea(button.dataset.mapArea));
   });
-  const buttonHolder = document.getElementById('map-store-buttons');
-  if (buttonHolder) {
-    buttonHolder.addEventListener('click', (event) => {
-      const button = event.target.closest('.map-store-button');
-      if (button) focusStoreMarker(button.dataset.storeId);
-    });
-  }
+  document.getElementById('map-store-buttons')?.addEventListener('click', event => {
+    const button = event.target.closest('.map-store-button');
+    if (button) focusStoreMap(button.dataset.storeId);
+  });
 
   if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          initStoreMap();
-          observer.disconnect();
-        }
-      });
-    }, { rootMargin: '500px 0px' });
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) {
+        mapReady = true;
+        updateStoreMap();
+        observer.disconnect();
+      }
+    }, { rootMargin: '300px 0px' });
     observer.observe(section);
   } else {
-    initStoreMap();
+    mapReady = true;
+    updateStoreMap();
   }
-
-  let resizeTimer;
-  window.addEventListener('resize', () => {
-    if (!storeMap) return;
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      storeMap.invalidateSize();
-      fitMapToArea(mapArea);
-    }, 120);
-  }, { passive: true });
 }
 
 function setupStoreFilters() {
