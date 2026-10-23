@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GOLD'S GYM ハイロックストレーニングクラブ | 対応店舗公式ページ</title>
   <meta name="description" content="GOLD'S GYMのハイロックストレーニングクラブ（HYROX TRAINING CLUB）の対応店舗、種目ルール、設備比較、体験予約をまとめた公式ページです。">
-  <link rel="stylesheet" href="leaflet-fallback.css?v=20260910-1">
-  <link rel="stylesheet" href="style.css?v=20260910-1">
+  <link rel="stylesheet" href="style.css?v=20261023-map1">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -695,18 +694,22 @@
     <div class="container">
       <p class="section-label">ACCESS MAP</p>
       <h2 class="section-title">アクセスマップ</h2>
-      <p class="access-map-note">各店舗の場所を地図で確認できます。営業時間・HYROX設備の利用可否は、事前に各店舗へお問い合わせください。</p>
+      <p class="access-map-note">地域と店舗を選ぶと、選択した1店舗の地図を表示します。営業時間・HYROX設備の利用可否は、事前に各店舗へお問い合わせください。</p>
       <div class="map-area-tabs" aria-label="マップ表示エリア">
         <button type="button" class="map-area-btn active" data-map-area="tokyo">東京</button>
         <button type="button" class="map-area-btn" data-map-area="kanto">関東</button>
         <button type="button" class="map-area-btn" data-map-area="kansai">関西</button>
       </div>
-      <div class="leaflet-map-shell">
-        <div id="hyrox-store-map" class="hyrox-store-map" role="img" aria-label="対応店舗の地図">
-          <div class="map-loading">地図を読み込み中</div>
-        </div>
+      <div class="google-map-shell">
+        <iframe id="hyrox-store-map" class="hyrox-store-map" title="浜松町東京店のGoogleマップ" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      <div class="map-store-buttons" id="map-store-buttons" aria-label="店舗ピンを開く"></div>
+      <div class="map-selected-info" aria-live="polite">
+        <h3 id="map-selected-name">浜松町東京店</h3>
+        <p id="map-selected-access">JR浜松町駅 北口より徒歩2分</p>
+      </div>
+      <p class="map-fallback-note">地図が表示されない場合は、Google マップで開いてください。</p>
+      <a class="map-external-link" id="map-external-link" href="https://maps.google.com/?q=GOLD%27S+GYM+浜松町東京" target="_blank" rel="noopener">Google マップで開く</a>
+      <div class="map-store-buttons" id="map-store-buttons" aria-label="表示する店舗を選択"></div>
     </div>
   </section>
 
@@ -1143,6 +1146,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=20260910-1"></script>
+  <script src="script.js?v=20261023-map1"></script>
 </body>
 </html>
