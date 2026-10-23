@@ -307,7 +307,8 @@ const officialStoreOrder = [
   '幕張ベイパークアリーナ店',
   '前橋インター店',
   'さいたまアリーナ店',
-  '橿原奈良店'
+  '橿原奈良店',
+  'コマーシャルモール博多店'
 ];
 
 const STORES = [
@@ -420,6 +421,14 @@ const STORES = [
     access: '近鉄京都線 新ノ口駅より徒歩約7分',
     gmapUrl: 'https://maps.google.com/?q=GOLD%27S+GYM+橿原奈良+奈良県橿原市十市町1222-1',
     embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.956154764606!2d135.79658089999998!3d34.529338800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60013381cb9a2ef5%3A0x903e9043547e0ddf!2z44K044O844Or44OJ44K444Og5qm_5Y6f5aWI6Imv!5e0!3m2!1sja!2sjp!4v1792741180759!5m2!1sja!2sjp"
+  },
+  {
+    "id": "hakata",
+    "name": "コマーシャルモール博多店",
+    "area": "kyushu",
+    "access": "JR竹下駅より徒歩18分／西鉄バス「東光寺北口」降車 徒歩2分",
+    "gmapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89%E3%82%B8%E3%83%A0%E3%82%B3%E3%83%9E%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB%E3%83%A2%E3%83%BC%E3%83%AB%E5%8D%9A%E5%A4%9A",
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.100437686806!2d130.4361935!3d33.5767414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541904c23f4a6e3%3A0x2be72f508adf3004!2z44K044O844Or44OJ44K444OgIOOCs-ODnuODvOOCt-ODo-ODq-ODouODvOODq-WNmuWkmg!5e0!3m2!1sja!2sjp!4v1792744737975!5m2!1sja!2sjp"
   }
 ];
 
@@ -587,7 +596,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'store-order-makuhari',
     'store-order-maebashi',
     'store-order-saitama',
-    'store-order-kashihara'
+    'store-order-kashihara',
+    'store-order-hakata'
   ];
 
   document.querySelectorAll('.stores-grid, .map-grid').forEach((container) => {
@@ -599,7 +609,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const tableBody = document.querySelector('.equipment-table tbody');
   if (tableBody) {
-    const storeOrder = ['hamamatsucho', 'ginza', 'harajuku-tokyo', 'harajuku-annex', 'toyocho', 'urayasu', 'chiba', 'makuhari', 'maebashi', 'saitama', 'kashihara'];
+    const storeOrder = ['hamamatsucho', 'ginza', 'harajuku-tokyo', 'harajuku-annex', 'toyocho', 'urayasu', 'chiba', 'makuhari', 'maebashi', 'saitama', 'kashihara', 'hakata'];
     storeOrder.forEach((storeId) => {
       const row = tableBody.querySelector(`tr[data-store-id="${storeId}"]`);
       if (row) tableBody.appendChild(row);
