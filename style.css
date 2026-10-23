@@ -1196,18 +1196,6 @@ img { max-width: 100%; display: block; }
   object-position: center;
   display: block;
 }
-.store-capability {
-  min-height: 190px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 12px;
-  background: #191919;
-  border-bottom: 1px solid rgba(254,221,0,0.35);
-}
-.store-capability strong { color: var(--gold); font-size: 1.5rem; }
-.store-capability span { color: var(--white); font-size: 0.85rem; }
 .plan-card--wide { grid-column: 1 / -1; }
 .store-img--chiba-newtown {
   object-position: center 78%;
@@ -2187,9 +2175,6 @@ img { max-width: 100%; display: block; }
   .store-img-placeholder {
     height: 122px;
   }
-  .store-capability { min-height: 122px; padding: 16px; gap: 8px; }
-  .store-capability strong { font-size: 1.15rem; }
-  .store-capability span { font-size: 0.72rem; }
   .store-info {
     padding: 12px;
   }
