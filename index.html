@@ -42,7 +42,8 @@
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="hero-eyebrow">HYROX TRAINING CLUB</p>
+      <!-- Training Clubの公式ロゴ反映まで名称テキストを一時非表示 -->
+      <!-- <p class="hero-eyebrow">HYROX TRAINING CLUB</p> -->
       <h1 class="hero-title hero-title--desktop"><span class="hero-title-hyrox">HYROX</span><span class="hero-title-training">トレーニングを</span><br><span class="hero-title-jp">始めるなら</span></h1>
       <h1 class="hero-title hero-title--mobile"><span class="hero-title-hyrox">HYROX</span><br><span class="hero-title-training">トレーニングを</span><br><span class="hero-title-jp">始めるなら</span></h1>
       <div class="hero-brand-lockup">
@@ -532,14 +533,13 @@
           <img class="store-img" src="assets/store-photos/commercial-mall-hakata.jpg" alt="ゴールドジム コマーシャルモール博多店 HYROXトレーニングエリア" width="1000" height="854">
           <div class="store-info">
             <h3>GOLD'S GYM<br><span>コマーシャルモール<br>博多店</span></h3>
-            <p class="store-affiliate store-affiliate--registered">HYROXアフィリエイトジム登録済み</p>
             <a class="store-phone" href="tel:0924777979">TEL 092-477-7979</a>
             <a class="store-map-link" href="#access-map" onclick="openStoreMap('hakata');return false;"><svg class="gmap-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>Googleマップ</a>
-            <p class="store-addr">JR竹下駅より徒歩18分<br>西鉄バス「東光寺北口」降車 徒歩2分</p>
-            <p class="store-addr">福岡県福岡市博多区東光寺町2-6-40<br>コマーシャルモール博多 2F</p>
+            <p class="store-addr">JR竹下駅 徒歩18分<br>バス「東光寺北口」徒歩2分</p>
             <div class="store-links">
-              <span class="store-btn store-btn--availability">会員・ビジターとも自由利用</span>
               <a href="https://www.goldsgym.jp/shop/commercial-mall-hakata/" target="_blank" rel="noopener" class="store-btn">ホームページ</a>
+              <a href="#pricing" class="store-btn" onclick="showStore('hakata');smoothTo('pricing');return false;">料金・利用方法を見る</a>
+              <a href="tel:0924777979" class="store-btn store-btn--gold">HYROXトレーニングを<br>問い合わせる</a>
               <a href="#equipment" class="store-btn" onclick="smoothTo('equipment');return false;">設備比較を見る</a>
             </div>
           </div>
@@ -1056,6 +1056,8 @@
 
       <div class="pricing-table" id="store-hakata">
         <div class="plan-card plan-card--wide">
+          <p class="store-affiliate store-affiliate--registered">HYROXアフィリエイトジム登録済み</p>
+          <p class="plan-desc">住所：福岡県福岡市博多区東光寺町2-6-40 コマーシャルモール博多 2F<br>アクセス：JR竹下駅より徒歩18分／西鉄バス「東光寺北口」降車 徒歩2分</p>
           <h3 class="plan-name">会員・ビジターとも自由利用</h3>
           <p class="plan-desc">HYROX設備は通常の施設利用料金でご利用いただけます。</p>
           <p class="plan-price">¥<span>0</span><small>HYROX設備の追加料金</small></p>
