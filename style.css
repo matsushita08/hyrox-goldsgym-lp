@@ -2670,3 +2670,63 @@ img { max-width: 100%; display: block; }
 @media (max-width: 360px) {
   #store-hakata .plan-name { font-size: 0.9375rem; }
 }
+
+/* Keep store-card primary actions to three rows; conditions are secondary. */
+.store-condition-slot { min-height: 44px; margin-bottom: 8px; }
+.store-condition-link,
+.store-aux-link {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: rgba(255,255,255,0.88);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.store-condition-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 10px 0;
+  background: transparent;
+  border: 0;
+  color: var(--gold);
+  cursor: pointer;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.store-condition-clock { flex-shrink: 0; }
+.store-condition-link:hover { color: var(--white); }
+.store-condition-link:focus-visible,
+.store-aux-link:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.store-links > .store-btn { min-height: 42px; }
+.store-links > .store-btn--gold { min-height: 64px; }
+.store-aux-links { margin-top: 12px; }
+.store-aux-link { display: inline-flex; gap: 6px; align-items: center; padding: 5px 0; text-decoration: underline; text-underline-offset: 3px; }
+.store-aux-link:hover { color: var(--gold); }
+.store-condition-dialog {
+  margin: auto;
+  width: min(480px, calc(100vw - 32px));
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
+  padding: 24px;
+  color: #fff;
+  background: #222;
+  border: 1px solid var(--gold);
+  line-height: 1.75;
+}
+.store-condition-dialog::backdrop { background: rgba(0,0,0,0.72); }
+.store-condition-dialog-head { display: flex; gap: 16px; align-items: start; justify-content: space-between; margin-bottom: 16px; }
+.store-condition-dialog-head h2 { font-size: 1.1rem; }
+.store-condition-dialog-head button { min-width: 44px; min-height: 44px; color: #fff; background: transparent; border: 1px solid #888; font-size: 1.5rem; cursor: pointer; }
+.store-condition-dialog p { margin-bottom: 12px; }
+.store-condition-dialog a { color: var(--gold); text-decoration: underline; }
+.store-condition-dialog :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+@media (max-width: 768px) {
+  .store-info h3 { min-height: 52px; }
+  .store-condition-slot { min-height: 44px; margin-bottom: 6px; }
+  .store-links > .store-btn { min-height: 44px; }
+  .store-links > .store-btn--gold { min-height: 56px; }
+  .store-aux-links { margin-top: 8px; }
+}

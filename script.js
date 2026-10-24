@@ -620,3 +620,18 @@ document.addEventListener('DOMContentLoaded', () => {
   setupStoreFilters();
   setupEquipmentScrollHint();
 });
+
+// The existing Chiba availability label opens its own native accessible dialog.
+(() => {
+  const dialog = document.getElementById('store-condition-dialog');
+  const trigger = document.querySelector('[data-store-condition="chiba"]');
+  if (!dialog || !trigger) return;
+  trigger.addEventListener('click', () => dialog.showModal());
+  dialog.querySelector('[data-store-condition-close]').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => {
+    if (event.target !== dialog) return;
+    const rect = dialog.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
+  });
+  dialog.addEventListener('close', () => trigger.focus({ preventScroll: true }));
+})();
