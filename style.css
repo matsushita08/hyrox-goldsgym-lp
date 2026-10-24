@@ -2730,3 +2730,11 @@ img { max-width: 100%; display: block; }
   .store-links > .store-btn--gold { min-height: 56px; }
   .store-aux-links { margin-top: 8px; }
 }
+
+/* Let store details use their natural height; align only the action block. */
+.store-info h3 { min-height: 0; }
+.store-condition-slot:empty { display: none; }
+.store-links { margin-top: auto; }
+@media (max-width: 768px) {
+  .stores-grid { align-items: stretch; }
+}
