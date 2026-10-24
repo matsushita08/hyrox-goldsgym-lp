@@ -1,0 +1,19 @@
+# 無効な設計下書き。 .github/workflows に移さないこと。
+# 手動起動だけを想定するが、現段階ではジョブも常に無効。
+# 将来: 信頼する取得ジョブがIssueを読み、スキーマ検証済みJSONだけを成果物にする。
+# 生成・テストジョブにはGitHubトークン、認証用HOME、.gitを渡さない。
+# 有料アダプターにはOS/containerのファイル・ネットワーク隔離と個別承認が必要。
+name: AI dev Phase 1 DRAFT DISABLED
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Target issue number (not implemented)
+        required: true
+permissions: {}
+jobs:
+  disabled:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 1 # 意図的に実行不可。接続・権限・費用の設計審査後に別途実装。
