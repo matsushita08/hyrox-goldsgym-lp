@@ -1,0 +1,11 @@
+{
+  "name": "hyrox-ai-dev-local-fixture",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "lint": "node cli.mjs self-check",
+    "demo": "node cli.mjs run --task examples/issue-task.json --fixture examples/fixture.json --dry-run"
+  }
+}

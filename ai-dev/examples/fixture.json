@@ -1,0 +1,5 @@
+{
+  "edits": [
+    { "path": "index.html", "find": "<!DOCTYPE html>", "replace": "<!DOCTYPE html>\n<!-- AI DEV FIXTURE DEMO -->" }
+  ]
+}

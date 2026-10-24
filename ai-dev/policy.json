@@ -1,0 +1,12 @@
+{
+  "repository": "matsushita08/hyrox-goldsgym-lp",
+  "allowedPaths": ["index.html", "style.css", "script.js", "leaflet-fallback.css"],
+  "maxFiles": 2,
+  "maxAddedLines": 30,
+  "maxDeletedLines": 30,
+  "maxChangedBytes": 8192,
+  "maxFileBytes": 2097152,
+  "maxTaskSeconds": 120,
+  "maxTaskUsd": 0,
+  "adapter": "fixture"
+}

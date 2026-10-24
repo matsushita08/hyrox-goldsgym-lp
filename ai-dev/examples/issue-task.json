@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "hyrox-demo-001",
+  "issue": {
+    "repository": "matsushita08/hyrox-goldsgym-lp",
+    "number": 1,
+    "title": "ローカル模擬タスク: 検証用コメントの追加",
+    "url": "https://github.com/matsushita08/hyrox-goldsgym-lp/issues/1"
+  },
+  "priority": "P2",
+  "description": "Issue番号は入力例であり、実際のIssue取得・変更は行わない。作業コピー内だけにコメントを追加する。",
+  "allowedPaths": ["index.html"],
+  "acceptanceCriteria": [
+    { "id": "demo-marker", "kind": "file_contains", "path": "index.html", "value": "<!-- AI DEV FIXTURE DEMO -->" },
+    { "id": "html-preserved", "kind": "file_contains", "path": "index.html", "value": "<html lang=\"ja\">" }
+  ],
+  "budget": { "maxSeconds": 30, "maxUsd": 0 }
+}
