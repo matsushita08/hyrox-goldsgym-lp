@@ -2646,3 +2646,27 @@ img { max-width: 100%; display: block; }
     transform: none;
   }
 }
+
+/* Hakata's four verified regular/visitor plans; other stores remain unchanged. */
+#store-hakata .plan-name { min-height: 2.6em; line-height: 1.3; }
+#store-hakata .plan-desc { min-height: 3em; }
+#store-hakata .plan-price { white-space: nowrap; }
+.hakata-pricing-notes {
+  grid-column: 1 / -1;
+  color: #555;
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  text-align: left;
+}
+.hakata-pricing-notes p + p { margin-top: 8px; }
+.hakata-pricing-notes a { color: #333; text-decoration: underline; text-underline-offset: 3px; }
+.hakata-pricing-notes details { margin-top: 12px; }
+.hakata-pricing-notes summary { cursor: pointer; color: #333; padding: 8px 0; }
+.hakata-pricing-notes details[open] > p { margin-top: 6px; }
+@media (max-width: 768px) {
+  #store-hakata .plan-desc { font-size: 0.8125rem; }
+}
+
+@media (max-width: 360px) {
+  #store-hakata .plan-name { font-size: 0.9375rem; }
+}
